@@ -25,13 +25,13 @@
     <body>
         
         <header class="header">
-            <a href="#" class="logo">Portfolio</a>
+            <a href="#" class="logo">Portfolio.</a>
                 <nav class="navbar">
-                    <a href="#" class="active">Главная</a>
-                    <a href="#">Обо мне</a>
-                    <a href="#">Навыки</a>
-                    <a href="#">Портфолио</a>
-                    <a href="#">Контакты</a>
+                    <a href="#" style="--i:1" class="active">Главная</a>
+                    <a href="#" style="--i:2">Обо мне</a>
+                    <a href="#" style="--i:3">Навыки</a>
+                    <a href="#" style="--i:4">Портфолио</a>
+                    <a href="#" style="--i:5">Контакты</a>
                 </nav>
 
                 <div class="navbar"> 
@@ -55,12 +55,12 @@
                     <div class="home-content">
                         <h3>Hello, It's Me</h3>
                         <h1>Artsiomi Dziuba</h1>
-                        <h3>And I a <span>Frontend Developer</span></h3>
+                        <h3>And I a <span class="multiple-text"></span></h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur ab perferendis accusamus voluptatem voluptate consectetur, porro, vitae fuga suscipit natus qui? Expedita vitae libero impedit mollitia beatae quod facilis dolores.</p>
                             <div class="social">
-                                <a href="#"><i class='bx bxl-facebook'></i></a>
-                                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                                <a href="#"><i class='bx bxl-google'></i></a>
+                                <a href="#" style="--i:6"><i class='bx bxl-facebook'></i></a>
+                                <a href="#" style="--i:7"><i class='bx bxl-linkedin'></i></a>
+                                <a href="#" style="--i:8"><i class='bx bxl-google'></i></a>
                             </div>
                             <a href="#" class="btn">Скачать CV</a>
                     </div>
@@ -70,5 +70,8 @@
                     </div>
 
                 </section>
+
+                <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+                <script src="\js\script.js"></script>  
     </body>
 </html>
