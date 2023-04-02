@@ -58,9 +58,9 @@
                         <h3>And I a <span class="multiple-text"></span></h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur ab perferendis accusamus voluptatem voluptate consectetur, porro, vitae fuga suscipit natus qui? Expedita vitae libero impedit mollitia beatae quod facilis dolores.</p>
                             <div class="social">
-                                <a href="#" style="--i:6"><i class='bx bxl-facebook'></i></a>
-                                <a href="#" style="--i:7"><i class='bx bxl-linkedin'></i></a>
-                                <a href="#" style="--i:8"><i class='bx bxl-google'></i></a>
+                                <a href="https://www.facebook.com/dzartsiomi" style="--i:6"><i class='bx bxl-facebook'></i></a>
+                                <a href="https://www.linkedin.com/in/dziubaav/" style="--i:7"><i class='bx bxl-linkedin'></i></a>
+                                <a href="https://www.instagram.com/dzartsiomi/" style="--i:8"><i class='bx bxl-instagram'></i></a>
                             </div>
                             <a href="#" class="btn">Скачать CV</a>
                     </div>
