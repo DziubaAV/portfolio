@@ -2,15 +2,16 @@
 
 <header class="header">
 
-    <a href="#" class="logo">Portfolio.</a>
-    <i class='bx bx-menu' id="menu-icon"></i>
+    <a href="#" class="logo">Portfolio</a>
+    
+        <i class='bx bx-menu' id="menu-icon"></i>
     
         <nav class="navbar">
-            <a href="/" style="--i:1" class="active">Главная</a>
-            <a href="{{ asset('about') }}" style="--i:2">Обо мне</a>
-            <a href="#skills" style="--i:3">Навыки</a>
-            <a href="#potfolio" style="--i:4">Портфолио</a>
-            <a href="{{ asset('contact') }}" style="--i:5">Контакты</a>
+            <a href="/" class="{{ request()->is('/') ? 'active' : null }}" style="--i:1">Главная</a>
+            <a href="{{ asset('about') }}" class="{{ request()->is('about') ? 'active' : null }}"style="--i:2">Обо мне</a>
+            <a href="{{ asset('services') }}" class="{{ request()->is('services') ? 'active' : null }}" style="--i:3">Проекты</a>
+            <a href="{{ asset('portfolio') }}" class="{{ request()->is('portfolio') ? 'active' : null }}" style="--i:4">Портфолио</a>
+            <a href="{{ asset('contact') }}" class="{{ request()->is('contact') ? 'active' : null }}" style="--i:5">Контакты</a>
         </nav>
 
                 <!-- <div class="navbar"> 

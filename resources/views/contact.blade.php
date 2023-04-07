@@ -1,5 +1,9 @@
 @extends("layouts.app")
-@section('title-block')Контакты@endsection
+@section('title-block')
+
+Контакты
+
+@endsection
 @section('content')
 <!-- Раздел контакты -->
 
@@ -7,7 +11,7 @@
 
 @include('messages')
 
-    <h2 class="heading">Напиши <span>мне!</span></h2>
+    <h2 class="heading">Напишите <span>мне!</span></h2>
 
     <form action="/contact/submit" method="POST">
         @csrf

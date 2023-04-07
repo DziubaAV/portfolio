@@ -1,3 +1,4 @@
+// Typed
 var typed = new Typed(".multiple-text", {
     strings: [
         "Software Engineer",

@@ -3,7 +3,7 @@
     <footer class="footer">
 
         <div class="footer-text">
-            <p>Copyright $copy; 2023 by Dziuba Artsiomi | All Right Reserved.</p>
+            <p>2023 by Dziuba Artsiomi</p>
         </div>
 
         <div class="footer-iconTop">
