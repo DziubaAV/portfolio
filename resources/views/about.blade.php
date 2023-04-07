@@ -1,6 +1,7 @@
 @extends("layouts.app")
-@section('title-block')Обо мне@endsection
+@section('title-block') Обо мне @endsection
 @section('content')
+
 <!-- Раздел обо мне -->
 <section class="about" id="about">
     <div class="about-img">

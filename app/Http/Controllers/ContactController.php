@@ -17,7 +17,7 @@ class ContactController extends Controller
         $contact->message = $request->input('message');
      
         $contact->save();
-        return redirect()->route('contact')->with('success', 'Сообщение было добавлено');
+        return redirect()->route('contact')->with('success', 'Ваше сообщение было отправлено успешно, спасибо.');
     }
 
     // Валидация
