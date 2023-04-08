@@ -27,7 +27,10 @@
         @include('inc.footer')
     
     <!-- Script -->
-    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-    <script src="\js\script.js"></script>
+    <script src="{{ asset ('https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js') }}"></script>
+    <script src="{{ asset ('/js/typed.js') }}"></script>
+
+    <script src="{{ asset ('/js/navbar.js') }}"></script>
+    
 </body>
 </html>

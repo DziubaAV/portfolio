@@ -1,5 +1,5 @@
 /* Общие стили */
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100&family=Roboto:wght@100&display=swap');
 
 
 * {
@@ -22,7 +22,7 @@
 
 html {
     font-size: 62.5%;
-    /* overflow: hidden; */
+    overflow: visible;
 }
 
 body {
@@ -64,10 +64,10 @@ section {
     color: var(--text-color);
     margin-left: 4rem;
     transition: .3s;
-    
-    opacity: 0;
+
+    /* opacity: 0;
     animation: sliderTop 5s ease forwards;
-    animation-delay: calc(.2s * var(--i));
+    animation-delay: calc(.2s * var(--i)); */
 }
 
 .navbar a:hover,
@@ -81,19 +81,19 @@ section {
     display: none;
 }
 
-/* Главная страница */
+/* Раздел "Главна страница" */
+
 .home {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    width: 100%;
-    height: 100vh;
+    gap: 2rem;
 }
+
 
 .home-img img {
     width: 35vw;
-    margin-right: 100px;
+    /* margin-right: 100px; */
 
     opacity: 0;
     animation: ZoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
@@ -104,16 +104,16 @@ section {
     font-size: 3.2rem;
     font-weight: 700;
 
-    opacity: 0;
+    /* opacity: 0;
     animation: sliderBottom 1s ease forwards;
-    animation-delay: .7s;
+    animation-delay: .7s; */
 }
 
 .home-content h3:nth-of-type(2) {
     margin-bottom: 2rem;
 
-    animation: sliderTop 1s ease forwards;
-    animation-delay: .7s;
+    /* animation: sliderTop 1s ease forwards;
+    animation-delay: .7s; */
 }
 
 span {
@@ -124,18 +124,18 @@ span {
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.3;
-
+    /* 
     opacity: 0;
     animation: sliderLeft 1s ease forwards;
-    animation-delay: 1s;
+    animation-delay: 1s; */
 }
 
 .home-content p {
     font-size: 1.6rem;
 
-    opacity: 0;
+    /* opacity: 0;
     animation: sliderRight 1s ease forwards;
-    animation-delay: 1s;
+    animation-delay: 1s; */
 }
 
 .socialmedia a {
@@ -174,10 +174,10 @@ span {
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
-    
-    opacity: 0;
+
+    /* opacity: 0;
     animation: sliderTop 1s ease forwards;
-    animation-delay: 1s;
+    animation-delay: 1s; */
 }
 
 .btn:hover {
@@ -257,7 +257,7 @@ span {
     100% {
         transform: translateY(0);
     }
-}
+} 
 
 /* Раздел контакты */
 .contact h2 {
@@ -315,8 +315,12 @@ span {
     background: var(--second-bg-color);
 }
 
-.about-img {
+.about-img img {
     width: 35vw;
+
+    opacity: 0;
+    animation: ZoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2s, 3s;
 }
 
 .heading {
@@ -357,12 +361,25 @@ span {
         padding: 10rem 3% 2rem;
     }
 
+    .services {
+        padding: 7rem;
+    }
+
+    .portfolio {
+        padding-bottom: 7rem;
+    }
+
+    .contact {
+        min-height: auto;
+    }
+
     .footer {
         padding: 2rem 3%;
     }
 }
 
-@media (max-widht: 768px) {
+@media (max-width: 821px) {
+
     #menu-icon {
         display: block;
     }
@@ -376,20 +393,105 @@ span {
         background: var(--bg-color);
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
     }
 
     .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
+    }
 
+    .home {
+        flex-direction: column;
+    }
+
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-img img {
+        width: 70vm;
+        margin-top: 4rem;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about img {
+        width: 70vm;
+        margin-top: 4rem;
+    }
+
+    .services h2 {
+        margin-bottom: 3rem;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 3rem;
+    }
+
+}
+
+
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .contact form .input-box {
+        width: 100%;
     }
 }
+
+@media (max-width: 365px) {
+    .home-img img {
+        width: 90vm;
+    }
+
+    .about-img img {
+        width: 90vm;
+    }
+
+    .footer {
+        position: fixed;
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+        z-index: 2;
+    }
+}
+
+@media (max-width: 991px) {
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 630px) {
+    .portfolio-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 
 /* Подвал */
 
 .footer {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -400,6 +502,11 @@ span {
 .footer-text {
     font-size: 1.6rem;
 }
+
+.footer p {
+    text-align: center;
+}
+
 
 .footer-iconTop a {
     display: inline-flex;
@@ -505,7 +612,7 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 1), var(--main-color));
+    background: linear-gradient(rgba(0, 0, 0, .8), var(--main-color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -542,4 +649,16 @@ span {
 .portfolio-layer a i {
     font-size: 2rem;
     color: var(--second-bg-color);
+}
+
+@media (max-width: 991px) {
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 630px) {
+    .portfolio-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
