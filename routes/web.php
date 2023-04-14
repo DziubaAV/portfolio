@@ -3,17 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+use App\Http\Controllers\VideoController;
 
 Route::get('/', function () {
     return view('home');
@@ -27,14 +17,25 @@ Route::get('/portfolio', function () {
     return view('portfolio');
 })->name('portfolio');
 
+Route::get('/video', function () {
+    return view('video');
+})->name('video');
+
+Route::get('/video',[VideoController::class, 'allVideo'])->name('youtube-video');
+
+
 Route::get('/services', function () {
     return view('services');
 })->name('services');
+
 
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 Route::post('/contact/submit',[ContactController::class, 'submit'])->name('contact-form');
+
+
+
 
 
 

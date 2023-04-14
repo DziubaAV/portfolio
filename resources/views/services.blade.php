@@ -15,30 +15,30 @@
         <div class="services-box">
         <i class='bx bx-code-alt'></i>
         <h3>Git HUB</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <a href="#" class="btn">Read More</a>
+        <p></p>
+        <a href="https://github.com/DziubaAV" target="_blank" class="btn">Перейти</a>
         </div>
 
         <div class="services-box">
         <i class='bx bx-video' ></i>
         <h3>Видео</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <a href="#" class="btn">Read More</a>
+        <p></p>
+        <a href="{{ route ('youtube-video') }}" class="btn">Смотреть</a>
         </div>
 
-        <div class="services-box">
+        <!-- <div class="services-box">
         <i class='bx bxs-paint'></i>
         <h3>Graphic Design</h3>
         <p>Lorem ipsum dolor sit amet.</p>
         <a href="#" class="btn">Read More</a>
-        </div>
+        </div> -->
 
-        <div class="services-box">
+        <!-- <div class="services-box">
         <i class='bx bx-bar-chart-alt'></i>
         <h3>Разное</h3>
         <p>Lorem ipsum dolor sit amet.</p>
         <a href="#" class="btn">Read More</a>
-        </div>
+        </div> -->
 
     </div>
 </section>
