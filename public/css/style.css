@@ -180,6 +180,12 @@ span {
     animation-delay: 1s; */
 }
 
+.btn-all {
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 50rem;
+}
+
 .btn:hover {
     box-shadow: none;
 }
@@ -695,3 +701,49 @@ span {
     height: 300px;
     width: 500px;
 }
+
+/* ssssssssssssss */
+.inf {
+    margin-top: 3.5rem;
+}
+
+.inf .profile-list .title {
+    display: block;
+    float: left;
+    color: #fff;
+    line-height: 36px;
+}
+
+.inf .profile-list .title i {
+    font-size: 23px;
+}
+
+.profile-list {
+    list-style-type: none;
+}
+
+.content {
+    font-size: 4rem;
+}
+
+.inf .profile-list .title .fa {
+    padding-left: 2px;
+}
+
+.inf .profile-list .content {
+    display: block;
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/* Раздел Резюме */
+

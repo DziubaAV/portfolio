@@ -19,7 +19,8 @@
         vel iusto sit recusandae quasi qui dolore obcaecati, quo vero tempora. Consectetur iste dolorum 
         voluptatibus eligendi non! Magnam doloremque provident nulla hic, officia laboriosam architecto 
         mollitia eaque eveniet veniam recusandae id omnis, consequatur quaerat quibusdam.</p>
-        <a href="#" class="btn">Читать еще</a>
+
+        <a href="#" class="btn">Написать мне</a>
     </div>
 </section>
 

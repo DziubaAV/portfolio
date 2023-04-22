@@ -13,6 +13,10 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
+Route::get('/resume', function () {
+    return view('resume');
+})->name('resume');
+
 Route::get('/portfolio', function () {
     return view('portfolio');
 })->name('portfolio');
