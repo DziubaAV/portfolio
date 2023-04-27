@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\VideoController;
 
+
 Route::get('/', function () {
     return view('home');
 })->name('home');
@@ -16,6 +17,13 @@ Route::get('/about', function () {
 Route::get('/resume', function () {
     return view('resume');
 })->name('resume');
+
+Route::get('resume/{locale}', function ($locale) {
+    Session::put('locale', $locale);
+
+    return redirect()->back();
+})->name('locale');
+
 
 Route::get('/portfolio', function () {
     return view('portfolio');
