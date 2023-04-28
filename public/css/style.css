@@ -748,6 +748,7 @@ span {
     margin: 64px auto;
     background: var(--second-bg-color);
     padding: 10px;
+    font-size: 14px;
 }
 
 .resume_wrapper .resume_left {
@@ -996,7 +997,7 @@ span {
    [data-tooltip]::after {
     content: attr(data-tooltip); /* Выводим текст */
     position: absolute; /* Абсолютное позиционирование */
-    width: 150px; /* Ширина подсказки */
+    width: 200px; /* Ширина подсказки */
     left: 0; top: 0; /* Положение подсказки */
     background: #3989c9; /* Синий цвет фона */
     color: #fff; /* Цвет текста */
