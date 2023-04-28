@@ -9,7 +9,7 @@
 <section class="resume_wrapper">
 	<div class="resume_left">
 		<div class="resume_image">
-			<img src="img\portfolio_about.png" alt="Resume_image">
+		<img src="{{ asset('img\resume.png')}}" alt="Resume_image">
 		</div>
 		<div class="resume_bottom">
 			<div class="resume_item resume_namerole">
@@ -212,9 +212,8 @@
 					<div class="int_icon">
                     <i class='bx bx-swim' ></i>
 					</div>
-					<div class="int_data">{{__('resume.Фридайвинг')}}</div>
-					<p>(Molchanovs L1/AIDA1)</p>
-
+					<div class="int_data" data-tooltip="Molchanovs L1 и AIDA1">{{__('resume.Фридайвинг')}}</div>
+					
 				</div>
                 <div class="interests">
 					<div class="int_icon">

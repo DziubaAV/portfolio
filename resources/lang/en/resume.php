@@ -15,7 +15,7 @@ return [
     'Фридайвинг' => 'Freediving',
     'Сквош' => 'Squash',
     'Международный государственный экологический университет имени А.Д. Сахарова' => 'International State Ecological University named after A.D. Sakharov',
-    'Специальность: инженер-программист (в здравоохранении)' => 'Specialty: software engineer (in healthcare)',
+    'Квалификация: инженер-программист (в здравоохранении)' => 'Specialty: software engineer (in healthcare)',
     'Институт информационных технологий БГУИР' => 'Institute of Information Technologies BSUIR',
     'Квалификация: программист – Web-дизайнер' => 'Specialty: programmer - Web-designer',
     'ООО "МИРТА"' => 'LLC "MIRTA"',

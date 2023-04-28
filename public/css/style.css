@@ -149,12 +149,12 @@ span {
     border-radius: 50%;
     font-size: 2rem;
     color: var(--main-color);
-    margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
+    margin: 1rem;
 
-    opacity: 0;
+    /* opacity: 0;
     animation: sliderLeft 1s ease forwards;
-    animation-delay: calc(.2s * var(--i));
+    animation-delay: calc(.2s * var(--i)); */
 }
 
 .socialmedia a:hover {
@@ -497,22 +497,17 @@ span {
 /* Подвал */
 
 .footer {
-    /* display: flex; */
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2rem 9%;
+    padding: 1rem;
     background: var(--second-bg-color);
 }
 
 .footer-text {
     font-size: 1.6rem;
 }
-
-.footer p {
-    text-align: center;
-}
-
 
 .footer-iconTop a {
     display: inline-flex;
@@ -702,7 +697,7 @@ span {
     width: 500px;
 }
 
-/* ssssssssssssss */
+/* Профиль*/
 .inf {
     margin-top: 3.5rem;
 }
@@ -992,3 +987,28 @@ span {
         font-size: 24px;
     }
 }
+
+/* Всплывающая подсказка */
+
+[data-tooltip] {
+    position: relative; /* Относительное позиционирование */ 
+   }
+   [data-tooltip]::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    width: 150px; /* Ширина подсказки */
+    left: 0; top: 0; /* Положение подсказки */
+    background: #3989c9; /* Синий цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 0.5em; /* Поля вокруг текста */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+    pointer-events: none; /* Подсказка */
+    opacity: 0; /* Подсказка невидима */
+    transition: 1s; /* Время появления подсказки */
+   } 
+   [data-tooltip]:hover::after {
+    opacity: 1; /* Показываем подсказку */
+    top: 2em; /* Положение подсказки */
+   }
+   
+   /* Конец "Всплывающая подсказка" */
