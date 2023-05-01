@@ -2,8 +2,14 @@
 
 <header class="header">
 
-    <a href="#" class="logo">Portfolio</a>
-    
+<div>
+<a href="#" class="logo">Portfolio</a>
+    <a href="#" class="themetoggle">
+    <span class="material-symbols-outlined">dark_mode</span></a>
+
+
+</div>
+   
         <i class='bx bx-menu' id="menu-icon"></i>
     
         <nav class="navbar">

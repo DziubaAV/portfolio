@@ -15,7 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
-   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
     <!-- Styles -->
     <link rel="stylesheet" href="css\style.css">
 
@@ -31,6 +32,7 @@
     <script src="{{ asset ('/js/typed.js') }}"></script>
 
     <script src="{{ asset ('/js/navbar.js') }}"></script>
+    <script src="{{ asset ('/js/daynight.js') }}"></script>
     
 </body>
 </html>

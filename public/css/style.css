@@ -785,8 +785,8 @@ span {
 }
 
 
-.localization  a:hover,
-.localization  a.active {
+.localization a:hover,
+.localization a.active {
     color: var(--main-color);
 }
 
@@ -992,24 +992,85 @@ span {
 /* Всплывающая подсказка */
 
 [data-tooltip] {
-    position: relative; /* Относительное позиционирование */ 
-   }
-   [data-tooltip]::after {
-    content: attr(data-tooltip); /* Выводим текст */
-    position: absolute; /* Абсолютное позиционирование */
-    width: 200px; /* Ширина подсказки */
-    left: 0; top: 0; /* Положение подсказки */
-    background: #3989c9; /* Синий цвет фона */
-    color: var(--text-color); /* Цвет текста */
-    padding: 0.5em; /* Поля вокруг текста */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
-    pointer-events: none; /* Подсказка */
-    opacity: 0; /* Подсказка невидима */
-    transition: 1s; /* Время появления подсказки */
-   } 
-   [data-tooltip]:hover::after {
-    opacity: 1; /* Показываем подсказку */
-    top: 2em; /* Положение подсказки */
-   }
-   
-   /* Конец "Всплывающая подсказка" */
+    position: relative;
+    /* Относительное позиционирование */
+}
+
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    /* Выводим текст */
+    position: absolute;
+    /* Абсолютное позиционирование */
+    width: 200px;
+    /* Ширина подсказки */
+    left: 0;
+    top: 0;
+    /* Положение подсказки */
+    background: #3989c9;
+    /* Синий цвет фона */
+    color: var(--text-color);
+    /* Цвет текста */
+    padding: 0.5em;
+    /* Поля вокруг текста */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Параметры тени */
+    pointer-events: none;
+    /* Подсказка */
+    opacity: 0;
+    /* Подсказка невидима */
+    transition: 1s;
+    /* Время появления подсказки */
+}
+
+[data-tooltip]:hover::after {
+    opacity: 1;
+    /* Показываем подсказку */
+    top: 2em;
+    /* Положение подсказки */
+}
+
+/* Конец "Всплывающая подсказка" */
+
+/* /////////////////////////////////////// */
+
+
+
+/* День и ночь */
+
+.white body {
+    background: rgb(211, 211, 211);
+}
+
+.white .header {
+    background: rgb(169, 169, 169);
+}
+
+.white .about {
+    background: rgb(211, 211, 211);
+}
+
+.white .portfolio {
+    background: rgb(211, 211, 211);
+}
+
+.white .footer {
+    background: rgb(169, 169, 169);
+}
+
+.white .contact form .input-box input,
+.white .contact form textarea {
+    background: rgb(169, 169, 169);
+}
+
+.white .resume_wrapper .resume_left {
+    background: rgb(169, 169, 169);
+}
+
+.white .resume_wrapper {
+    background: rgb(192, 192, 192);
+}
+
+.white .services-box {
+    background: rgb(169, 169, 169);
+}
+/* Конец "День и ночь" */
