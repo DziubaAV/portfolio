@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\VideoController;
+use App\Http\Controllers\PortfolioController;
 
 
 Route::get('/', function () {
@@ -28,6 +29,12 @@ Route::get('resume/{locale}', function ($locale) {
 Route::get('/portfolio', function () {
     return view('portfolio');
 })->name('portfolio');
+
+Route::get('/portfolio', [PortfolioController::class, 'index']);
+
+
+
+
 
 Route::get('/video', function () {
     return view('video');

@@ -11,64 +11,18 @@
 <section class="portfolio" id="portfolio">
     <h2 class="heading">Мое <span>портфолио</span></h2>
     <div class="portfolio-container">
-
-    <div class="portfolio-box">
-            <img src="img\photoclub.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>WEB Design</h4>
-                <p>Lorem ipsum dolor sit</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
-            </div>
-        </div>
-
+    @foreach($portfolio as $project)
         <div class="portfolio-box">
-            <img src="img\photoclub.jpg" alt="">
+            @if (!empty($project->image_path))
+                <img src="{{ $project->image_path }}" alt="">
+            @endif
             <div class="portfolio-layer">
-                <h4>WEB Design</h4>
-                <p>Lorem ipsum dolor sit</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
+                <h4>{{ $project->name }}</h4>
+                <p>{{ $project->description }}</p>
+                <a href="{{ $project->link_url }}" target="_blank"><i class='bx bx-link-external'></i></a>
             </div>
-        </div>
-
-        <div class="portfolio-box">
-            <img src="img\photoclub.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>WEB Design</h4>
-                <p>Lorem ipsum dolor sit</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
-            </div>
-        </div>
-
-        <div class="portfolio-box">
-            <img src="img\photoclub.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>WEB Design</h4>
-                <p>Lorem ipsum dolor sit</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
-            </div>
-        </div>
-
-        <div class="portfolio-box">
-            <img src="img\photoclub.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>WEB Design</h4>
-                <p>Lorem ipsum dolor sit</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
-            </div>
-        </div>
-
-        <div class="portfolio-box">
-            <img src="img\photoclub.jpg" alt="">
-            <div class="portfolio-layer">
-                <h4>WEB Design</h4>
-                <p>Lorem ipsum dolor sit</p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
-            </div>
-        </div>
-    
-    </div>
-          
-
+        </div> 
+    @endforeach   
+</div>
 </section>
-
 @endsection
