@@ -43,9 +43,9 @@ Route::get('/video', function () {
 Route::get('/video',[VideoController::class, 'allVideo'])->name('youtube-video');
 
 
-Route::get('/services', function () {
-    return view('services');
-})->name('services');
+Route::get('/projects', function () {
+    return view('projects');
+})->name('projects');
 
 
 Route::get('/contact', function () {
