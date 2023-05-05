@@ -375,6 +375,10 @@ span {
         padding-bottom: 7rem;
     }
 
+    .video-wrapper {
+        padding-bottom: 7rem;
+    }
+
     .contact {
         min-height: auto;
     }
@@ -393,6 +397,7 @@ span {
     .white .navbar {
         background: rgb(119, 136, 153);
     }
+
     .navbar {
         position: absolute;
         top: 100%;
@@ -449,6 +454,10 @@ span {
         margin-bottom: 3rem;
     }
 
+    .video-box {
+        margin-bottom: 3rem;
+    }
+
 }
 
 
@@ -488,10 +497,18 @@ span {
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .video-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 630px) {
     .portfolio-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .video-wrapper {
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -671,36 +688,35 @@ span {
 }
 
 
-/* Видео блок */
+/* Раздел "Видео"*/
 
 .video {
     padding: 7rem;
 }
 
-.video-container {
+.video-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.video-container {
     padding: 1rem;
 }
 
 .video-box {
-    flex: 1 1 30rem;
     background: var(--second-bg-color);
-    padding: 2rem;
-    border-radius: 2rem;
-    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
     border: .2rem solid var(--bg-color);
-}
+    width: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 .video-box p {
-    font-size: 2rem;
-}
-
-.video-container iframe {
-    height: 300px;
-    width: 500px;
+    font-size: 1.7rem;
 }
 
 /* Профиль*/
@@ -998,27 +1014,41 @@ span {
 /* Всплывающая подсказка */
 
 [data-tooltip] {
-    position: relative;    /* Относительное позиционирование */
+    position: relative;
+    /* Относительное позиционирование */
 }
 
 [data-tooltip]::after {
-    content: attr(data-tooltip);    /* Выводим текст */
-    position: absolute;    /* Абсолютное позиционирование */
-    width: 200px;    /* Ширина подсказки */
+    content: attr(data-tooltip);
+    /* Выводим текст */
+    position: absolute;
+    /* Абсолютное позиционирование */
+    width: 200px;
+    /* Ширина подсказки */
     left: 0;
-    top: 0;    /* Положение подсказки */
-    background: #3989c9;    /* Синий цвет фона */
-    color: var(--text-color);    /* Цвет текста */
-    padding: 0.5em;    /* Поля вокруг текста */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);    /* Параметры тени */
-    pointer-events: none;    /* Подсказка */
-    opacity: 0;    /* Подсказка невидима */
-    transition: 1s;    /* Время появления подсказки */
+    top: 0;
+    /* Положение подсказки */
+    background: #3989c9;
+    /* Синий цвет фона */
+    color: var(--text-color);
+    /* Цвет текста */
+    padding: 0.5em;
+    /* Поля вокруг текста */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Параметры тени */
+    pointer-events: none;
+    /* Подсказка */
+    opacity: 0;
+    /* Подсказка невидима */
+    transition: 1s;
+    /* Время появления подсказки */
 }
 
 [data-tooltip]:hover::after {
-    opacity: 1;    /* Показываем подсказку */
-    top: 2em;    /* Положение подсказки */
+    opacity: 1;
+    /* Показываем подсказку */
+    top: 2em;
+    /* Положение подсказки */
 }
 
 /* Конец "Всплывающая подсказка" */
@@ -1064,3 +1094,32 @@ span {
 
 
 /* Конец "День и ночь" */
+
+
+/* Пагинация */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    margin: 2rem;
+}
+
+.pagination a {
+    color: var(--text-color);
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid var(--main-color);
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: 1px solid var(--main-color);
+}
+
+.pagination a:hover:not(.active) {background-color: var(--main-color);}
+/* Конец "Пагинация" */

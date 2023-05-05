@@ -9,7 +9,7 @@ use App\Models\Video;
 class VideoController extends Controller
 {
     public function allVideo(){
-        $videos = Video::orderBy('id', 'DESC')->simplePaginate(10);
+        $videos = Video::orderBy('id', 'DESC')->paginate(6);
         return view('video', compact('videos'));
        }
 
