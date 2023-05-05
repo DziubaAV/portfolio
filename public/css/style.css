@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
+
 /* Общие стили */
 * {
     margin: 0;
@@ -33,9 +34,9 @@ section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
-/* Конец "Общие стили" */
+/* //////////////////////////////////////////////////////// */
 
-/* Навигация */
+/* Раздел "Навигация" */
 .header {
     position: fixed;
     top: 0;
@@ -80,7 +81,8 @@ section {
     color: var(--text-color);
     display: none;
 }
-/* Конец "Навигация" */
+
+/* //////////////////////////////////////////////////////// */
 
 /* Раздел "Главная страница" */
 
@@ -90,7 +92,6 @@ section {
     align-items: center;
     gap: 2rem;
 }
-
 
 .home-img img {
     width: 35vw;
@@ -190,7 +191,8 @@ span {
 .btn:hover {
     box-shadow: none;
 }
-/* Конец раздел "Главная страница" */
+
+/* //////////////////////////////////////////////////////// */
 
 /* Раздел "Главная страница: анимация" */
 @keyframes sliderRight {
@@ -266,6 +268,7 @@ span {
         transform: translateY(0);
     }
 }
+/* //////////////////////////////////////////////////////// */
 
 /* Раздел "Контакты" */
 .contact h2 {
@@ -312,6 +315,7 @@ span {
     margin-top: 2rem;
     cursor: pointer;
 }
+/* //////////////////////////////////////////////////////// */
 
 /* Раздел Обо мне */
 
@@ -349,173 +353,7 @@ span {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
-
-
-
-/* Адаптив */
-
-@media (max-widht: 1200px) {
-    html {
-        font-size: 55%;
-    }
-}
-
-@media (max-widht: 991px) {
-    .header {
-        padding: 2rem 3%;
-    }
-
-    section {
-        padding: 10rem 3% 2rem;
-    }
-
-    .projects {
-        padding: 7rem;
-    }
-
-    .portfolio {
-        padding-bottom: 7rem;
-    }
-
-    .video-wrapper {
-        padding-bottom: 7rem;
-    }
-
-    .contact {
-        min-height: auto;
-    }
-
-    .footer {
-        padding: 2rem 3%;
-    }
-}
-
-@media (max-width: 1033px) {
-
-    #menu-icon {
-        display: block;
-    }
-
-    .white .navbar {
-        background: rgb(119, 136, 153);
-    }
-
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 3%;
-        background: var(--bg-color);
-        border-top: .1rem solid rgba(0, 0, 0, .2);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-        display: none;
-    }
-
-    .navbar.active {
-        display: block;
-    }
-
-    .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-
-    .home {
-        flex-direction: column;
-    }
-
-    .home-content h3 {
-        font-size: 2.6rem;
-    }
-
-    .home-content h1 {
-        font-size: 5rem;
-    }
-
-    .home-img img {
-        width: 70vm;
-        margin-top: 4rem;
-    }
-
-    .about {
-        flex-direction: column-reverse;
-    }
-
-    .about img {
-        width: 70vm;
-        margin-top: 4rem;
-    }
-
-    .projects h2 {
-        margin-bottom: 3rem;
-    }
-
-    .portfolio h2 {
-        margin-bottom: 3rem;
-    }
-
-    .video-box {
-        margin-bottom: 3rem;
-    }
-
-}
-
-
-
-@media (max-width: 450px) {
-    html {
-        font-size: 50%;
-    }
-
-    .contact form .input-box {
-        width: 100%;
-    }
-}
-
-@media (max-width: 365px) {
-    .home-img img {
-        width: 90vm;
-    }
-
-    .about-img img {
-        width: 90vm;
-    }
-
-    .footer {
-        position: fixed;
-        flex-direction: column-reverse;
-    }
-
-    .footer p {
-        text-align: center;
-        margin-top: 2rem;
-        z-index: 2;
-    }
-}
-
-@media (max-width: 991px) {
-    .portfolio-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .video-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 630px) {
-
-    .portfolio-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .video-wrapper {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
+/* //////////////////////////////////////////////////////// */
 
 /* Подвал */
 
@@ -550,7 +388,7 @@ span {
     font-size: 2.4rem;
     color: var(--second-bg-color);
 }
-
+/* //////////////////////////////////////////////////////// */
 
 /* Раздел "Проекты" */
 
@@ -594,10 +432,9 @@ span {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
+/* //////////////////////////////////////////////////////// */
 
-
-/* Раздел Portfolio */
-
+/* Раздел Портфолио */
 .portfolio {
     background: var(--second-bg-color);
 }
@@ -607,10 +444,11 @@ span {
 }
 
 .portfolio-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 2.5rem;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .portfolio-container .portfolio-box {
@@ -621,7 +459,6 @@ span {
     display: flex;
     width: 430px;
     height: 300px;
-
 }
 
 .portfolio-box img {
@@ -677,36 +514,24 @@ span {
     font-size: 2rem;
     color: var(--second-bg-color);
 }
-
-@media (max-width: 991px) {
-
-    .portfolio-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 630px) {
-
-    .portfolio-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
+/* //////////////////////////////////////////////////////// */
 
 /* Раздел "Видео"*/
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 .video {
     padding: 7rem;
 }
 
-.video-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-}
-
-.video-container {
+.video-container iframe {
     padding: 1rem;
+    width: 560px;
+    height: 315px;
 }
 
 .video-box {
@@ -723,6 +548,7 @@ span {
 .video-box p {
     font-size: 1.7rem;
 }
+/* //////////////////////////////////////////////////////// */
 
 /* Профиль*/
 .inf {
@@ -765,7 +591,7 @@ span {
 .clearfix {
     clear: both;
 }
-
+/* //////////////////////////////////////////////////////// */
 
 /* Раздел Резюме */
 
@@ -790,7 +616,6 @@ span {
 .resume_wrapper .resume_left .resume_image img {
     width: 100%;
     display: block;
-
 }
 
 .resume_wrapper .resume_title {
@@ -895,8 +720,7 @@ span {
 }
 
 .resume_wrapper .resume_right .resume_namerole .name {
-    color: color:var(--text-color);
-    ;
+    color: var(--text-color);
     font-size: 32px;
 }
 
@@ -962,59 +786,7 @@ span {
     color: #0175b2;
     margin-bottom: 10px;
 }
-
-
-@media screen and (max-width: 800px) {
-    .resume_wrapper .resume_right .resume_namerole {
-        display: none;
-    }
-
-    .resume_wrapper .resume_left .resume_namerole {
-        display: block;
-    }
-
-    .resume_wrapper {
-        width: 95%;
-        margin: 51px auto;
-        flex-direction: column;
-    }
-
-    .resume_wrapper .resume_left,
-    .resume_wrapper .resume_right {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 424px) {
-    .resume_wrapper .resume_right {
-        padding: 20px 30px;
-    }
-
-    .resume_wrapper .resume_right .resume_data {
-        flex-direction: column;
-    }
-
-    .resume_wrapper .resume_right .resume_data .year {
-        padding: 0;
-        margin-bottom: 5px;
-        width: 100%;
-        color: #0175b2;
-    }
-
-    .resume_wrapper .resume_right .resume_data .year:before,
-    .resume_wrapper .resume_right .resume_data .year:after {
-        display: none;
-    }
-
-    .resume_wrapper .resume_right .resume_data .resume_content {
-        width: 100%;
-        padding: 0;
-    }
-
-    .resume_wrapper .resume_right .resume_interests .interests .int_icon {
-        font-size: 24px;
-    }
-}
+/* //////////////////////////////////////////////////////// */
 
 /* Всплывающая подсказка */
 
@@ -1041,11 +813,9 @@ span {
     opacity: 1;
     top: 2em;
 }
-
-/* Конец "Всплывающая подсказка" */
+/* //////////////////////////////////////////////////////// */
 
 /* День и ночь */
-
 .white body {
     background: rgb(169, 169, 169);
 }
@@ -1082,7 +852,7 @@ span {
 .white .projects-box {
     background: rgb(128, 128, 128);
 }
-/* Конец "День и ночь" */
+/* //////////////////////////////////////////////////////// */
 
 /* Пагинация */
 .pagination {
@@ -1112,4 +882,4 @@ span {
 .pagination a:hover:not(.active) {
     background-color: var(--main-color);
 }
-/* Конец "Пагинация" */
+/* //////////////////////////////////////////////////////// */

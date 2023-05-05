@@ -10,11 +10,12 @@
 
 <section class="portfolio" id="portfolio">
     <h2 class="heading">Мое <span>портфолио</span></h2>
+
     <div class="portfolio-container">
     @foreach($portfolio as $project)
         <div class="portfolio-box">
             @if (!empty($project->image_path))
-                <img src="{{ $project->image_path }}" alt="">
+                <img src="{{ $project->image_path }}" alt="$project->image_path">
             @endif
             <div class="portfolio-layer">
                 <h4>{{ $project->name }}</h4>

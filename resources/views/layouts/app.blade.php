@@ -19,6 +19,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css\adaptiv.css">
 
 </head>
 <body>
