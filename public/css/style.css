@@ -1,7 +1,6 @@
-/* Общие стили */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
-
+/* Общие стили */
 * {
     margin: 0;
     padding: 0;
@@ -34,6 +33,7 @@ section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
+/* Конец "Общие стили" */
 
 /* Навигация */
 .header {
@@ -80,8 +80,9 @@ section {
     color: var(--text-color);
     display: none;
 }
+/* Конец "Навигация" */
 
-/* Раздел "Главна страница" */
+/* Раздел "Главная страница" */
 
 .home {
     display: flex;
@@ -189,8 +190,9 @@ span {
 .btn:hover {
     box-shadow: none;
 }
+/* Конец раздел "Главная страница" */
 
-/* Главная страница: анимация */
+/* Раздел "Главная страница: анимация" */
 @keyframes sliderRight {
     0% {
         transform: translateX(-100px);
@@ -265,7 +267,7 @@ span {
     }
 }
 
-/* Раздел контакты */
+/* Раздел "Контакты" */
 .contact h2 {
     margin-bottom: 3rem;
 }
@@ -388,7 +390,7 @@ span {
     }
 }
 
-@media (max-width: 821px) {
+@media (max-width: 1033px) {
 
     #menu-icon {
         display: block;
@@ -504,6 +506,7 @@ span {
 }
 
 @media (max-width: 630px) {
+
     .portfolio-container {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -676,12 +679,14 @@ span {
 }
 
 @media (max-width: 991px) {
+
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 630px) {
+
     .portfolio-container {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -713,7 +718,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
 .video-box p {
     font-size: 1.7rem;
@@ -1015,40 +1020,26 @@ span {
 
 [data-tooltip] {
     position: relative;
-    /* Относительное позиционирование */
 }
 
 [data-tooltip]::after {
     content: attr(data-tooltip);
-    /* Выводим текст */
     position: absolute;
-    /* Абсолютное позиционирование */
     width: 200px;
-    /* Ширина подсказки */
     left: 0;
     top: 0;
-    /* Положение подсказки */
     background: #3989c9;
-    /* Синий цвет фона */
     color: var(--text-color);
-    /* Цвет текста */
     padding: 0.5em;
-    /* Поля вокруг текста */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    /* Параметры тени */
     pointer-events: none;
-    /* Подсказка */
     opacity: 0;
-    /* Подсказка невидима */
     transition: 1s;
-    /* Время появления подсказки */
 }
 
 [data-tooltip]:hover::after {
     opacity: 1;
-    /* Показываем подсказку */
     top: 2em;
-    /* Положение подсказки */
 }
 
 /* Конец "Всплывающая подсказка" */
@@ -1091,10 +1082,7 @@ span {
 .white .projects-box {
     background: rgb(128, 128, 128);
 }
-
-
 /* Конец "День и ночь" */
-
 
 /* Пагинация */
 .pagination {
@@ -1121,5 +1109,7 @@ span {
     border: 1px solid var(--main-color);
 }
 
-.pagination a:hover:not(.active) {background-color: var(--main-color);}
+.pagination a:hover:not(.active) {
+    background-color: var(--main-color);
+}
 /* Конец "Пагинация" */
