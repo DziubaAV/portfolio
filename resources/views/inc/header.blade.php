@@ -2,13 +2,7 @@
 
 <header class="header">
 
-<div>
-<a href="#" class="logo">Portfolio</a>
-    <a href="#" class="themetoggle">
-    <span class="material-symbols-outlined">dark_mode</span></a>
-
-
-</div>
+  <a href="#" class="logo">Portfolio</a>
    
         <i class='bx bx-menu' id="menu-icon"></i>
     
@@ -19,7 +13,12 @@
             <a href="{{ asset('projects') }}"   class="{{ request()->is('projects') ? 'active' : null }}" style="--i:3">Проекты</a>
             <a href="{{ asset('portfolio') }}"  class="{{ request()->is('portfolio') ? 'active' : null }}" style="--i:4">Портфолио</a>
             <a href="{{ asset('contact') }}"    class="{{ request()->is('contact') ? 'active' : null }}" style="--i:5">Контакты</a>
+           
+    <a href="#" class="themetoggle">
+    <span class="material-symbols-outlined">dark_mode</span></a>
+
         </nav>
+        
 
                 <!-- <div class="navbar"> 
                     @if (Route::has('login'))
@@ -36,4 +35,9 @@
                         </div>
                     @endif
                 </div> -->
+
+
+
+
+
 </header>
