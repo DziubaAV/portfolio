@@ -19,16 +19,5 @@ class ContactController extends Controller
         $contact->save();
         return redirect()->route('contact')->with('success', 'Ваше сообщение было отправлено успешно, спасибо.');
     }
-
-    // Валидация
     
-    // public function submit(Request $request) {
-    //     $validation = $request->validate([
-    //         "fullname" => 'required|min:5|max:50',
-    //         "email" => 'required|email:rfc,dns',
-    //         "email_subject" => 'required',
-    //         "mobile" => 'required',
-    //         "message" => 'required'
-    //     ]);
-    // }
 }
