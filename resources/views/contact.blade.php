@@ -45,8 +45,8 @@
         @endif
         
         <div class="counter-box">
-            <textarea class="counte-input" type="text" name="message" cols="30" rows="10" placeholder="Введите сообщения" maxlength="500">{{ old('message') }}</textarea>
-                <span class="counter-text">
+            <textarea class="counte-input" type="text" name="message" cols="30" rows="10" placeholder="Введите сообщения" maxlength="500">{{ old('message') }}</textarea> 
+            <span class="counter-text">
                     <span class="counter-text_current">0</span>
                     /
                     <span >500</span>
@@ -54,7 +54,7 @@
         </div>
 
     <button class="btn" type="submit">Отправить</button>
-    
+   
 <!-- Счетчик для Textarea -->
     <script>
         const ta = document.querySelector('.counte-input');

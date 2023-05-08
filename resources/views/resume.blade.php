@@ -57,6 +57,10 @@
 					<div class="resume_subtitle">Email</div>
 					<div class="resume_subinfo">dz.artsiomi@gmail.com</div>
 				</div>
+				<div class="resume_info">
+					<!-- <div class="resume_subtitle">Email</div> -->
+					<div class="resume_subinfo"><a href="https://www.linkedin.com/in/dzartsiomi/" title="Linkedin" target="_blank">Linkedin</a></div>
+				</div>
 			</div>
 			<div class="resume_item resume_skills">
 				<div class="resume_title">{{__('resume.Навыки')}}</div>
@@ -99,9 +103,7 @@
 	</div>
 	<div class="resume_right">
 		<div class="resume_item resume_namerole">
-			<div class="name">{{__('resume.Артёмий Дзюба')}}</div>
-
-			<h3><span class="multiple-text"></span></h3>
+			<div class="name">{{__('resume.Артёмий Дзюба')}}</div>	
 		</div>
 		<div class="resume_item resume_education">
 			<div class="resume_title">{{__('resume.Образование')}}</div>

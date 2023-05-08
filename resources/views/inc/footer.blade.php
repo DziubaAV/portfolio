@@ -11,7 +11,7 @@
         <div class="footer-text">
             <p>2023 by Dziuba Artsiomi</p>
         </div>
-
+        <h3><span class="multiple-text"></span></h3>
         <!-- <div class="footer-iconTop">
             <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
         </div> -->
