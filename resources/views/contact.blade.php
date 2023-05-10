@@ -20,24 +20,24 @@
         @if ($errors->has('fullname'))
         <span class="error">{{ $errors->first('fullname') }}</span>
         @endif
-    <input type="text" name="fullname" placeholder="Полное имя" value="{{ old('fullname') }}">
+    <input type="text" name="fullname" placeholder="Полное имя (обязательно)" value="{{ old('fullname') }}">
         
         @if($errors->has('email'))
         <span class="error">{{ $errors->first('email') }}</span>
         @endif
-    <input type="email" name="email" placeholder="Адрес электронной почты" value="{{ old('email') }}">     
+    <input type="email" name="email" placeholder="Адрес электронной почты (обязательно)" value="{{ old('email') }}">     
     </div>
 
     <div class="input-box">
         @if($errors->has('mobile'))
         <span class="error">{{ $errors->first('mobile') }}</span>
         @endif
-    <input type="tel" name="mobile" placeholder="Мобильный телефон" value="{{ old('mobile') }}">
+    <input type="tel" name="mobile" placeholder="Мобильный телефон (обязательно)" value="{{ old('mobile') }}">
         
         @if($errors->has('email_subject'))
         <span class="error">{{ $errors->first('email_subject') }}</span>
         @endif
-    <input type="text" name="email_subject" placeholder="Тема письма" maxlength="110" value="{{ old('email_subject') }}"> 
+    <input type="text" name="email_subject" placeholder="Тема письма (обязательно)" maxlength="110" value="{{ old('email_subject') }}"> 
     </div>
 
         @if($errors->has('message'))
@@ -45,7 +45,7 @@
         @endif
         
         <div class="counter-box">
-            <textarea class="counte-input" type="text" name="message" cols="30" rows="10" placeholder="Введите сообщения" maxlength="500">{{ old('message') }}</textarea> 
+            <textarea class="counte-input" type="text" name="message" cols="30" rows="10" placeholder="Введите сообщения (обязательно)" maxlength="500">{{ old('message') }}</textarea> 
             <span class="counter-text">
                     <span class="counter-text_current">0</span>
                     /

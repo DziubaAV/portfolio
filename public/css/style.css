@@ -14,10 +14,20 @@
 }
 
 :root {
-    --bg-color: #1f242d;
-    --second-bg-color: #323946;
-    --text-color: #fff;
-    --main-color: #0ef;
+
+    /* Светлая тема */
+    --light-bg: #F7F8F9;
+    --light-border: #F1F2F4;
+    --light-surface: #FFFFFF;
+    --light-text-primary: #091E42;
+    --light-text-secondary: #626F86;
+    --light-primary: #1D7AFC;
+
+    /* Темная тема */
+    --dark-bg: #1f242d;
+    --dark-second-bg: #323946;
+    --dark-text: #fff;
+    --dark-main-color: #0ef;
 }
 
 html {
@@ -26,8 +36,8 @@ html {
 }
 
 body {
-    background: var(--bg-color);
-    color: var(--text-color);
+    background: var(--dark-bg);
+    color: var(--dark-text);
 }
 
 section {
@@ -44,7 +54,7 @@ section {
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    background: var(--dark-bg);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,7 +63,7 @@ section {
 
 .logo {
     font-size: 2.5rem;
-    color: var(--text-color);
+    color: var(--dark-text);
     font-weight: 600;
     cursor: default;
 
@@ -63,7 +73,7 @@ section {
 
 .navbar a {
     font-size: 1.7rem;
-    color: var(--text-color);
+    color: var(--dark-text);
     margin-left: 4rem;
     transition: .3s;
 
@@ -74,12 +84,12 @@ section {
 
 .navbar a:hover,
 .navbar a.active {
-    color: var(--main-color);
+    color: var(--dark-main-color);
 }
 
 #menu-icon {
     font-size: 3.6rem;
-    color: var(--text-color);
+    color: var(--dark-text);
     display: none;
 }
 
@@ -120,7 +130,7 @@ section {
 }
 
 span {
-    color: var(--main-color);
+    color: var(--dark-main-color);
 }
 
 .home-content h1 {
@@ -148,10 +158,10 @@ span {
     width: 4rem;
     height: 4rem;
     background: transparent;
-    border: .2rem solid var(--main-color);
+    border: .2rem solid var(--dark-main-color);
     border-radius: 50%;
     font-size: 2rem;
-    color: var(--main-color);
+    color: var(--dark-main-color);
     transition: .5s ease;
     margin: 1rem;
 
@@ -161,19 +171,19 @@ span {
 }
 
 .socialmedia a:hover {
-    background: var(--main-color);
-    color: var(--second-bg-color);
-    box-shadow: 0 0 1rem var(--main-color);
+    background: var(--dark-main-color);
+    color: var(--dark-second-bg);
+    box-shadow: 0 0 1rem var(--dark-main-color);
 }
 
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
-    background: var(--main-color);
+    background: var(--dark-main-color);
     border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--main-color);
+    box-shadow: 0 0 1rem var(--dark-main-color);
     font-size: 1.6rem;
-    color: var(--second-bg-color);
+    color: var(--dark-second-bg);
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
@@ -295,14 +305,14 @@ span {
     width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
-    color: var(--text-color);
-    background: var(--second-bg-color);
+    color: var(--dark-text);
+    background: var(--dark-second-bg);
     border-radius: .8rem;
     margin: .7rem 0;
 }
 
 ::placeholder {
-    color: var(--text-color);
+    color: var(--dark-text);
 }
 
 
@@ -325,8 +335,8 @@ span {
     display: inline-block;
     width: 100%;
     font-size: 1.6rem;
-    color: var(--text-color);
-    background: var(--second-bg-color);
+    color: var(--dark-text);
+    background: var(--dark-second-bg);
     border-radius: .8rem;
     margin: .7rem 0;
 }
@@ -346,7 +356,7 @@ span {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: var(--second-bg-color);
+    background: var(--dark-second-bg);
 }
 
 .about-img img {
@@ -386,7 +396,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     padding: 1rem;
-    background: var(--second-bg-color);
+    background: var(--dark-second-bg);
 }
 
 .footer-text {
@@ -398,18 +408,18 @@ span {
     justify-content: center;
     align-items: center;
     padding: .8rem;
-    background: var(--main-color);
+    background: var(--dark-main-color);
     border-radius: .8rem;
     transition: .5s ease;
 }
 
 .footer-iconTop a:hover {
-    box-shadow: 0 0 1rem var(--main-color);
+    box-shadow: 0 0 1rem var(--dark-main-color);
 }
 
 .footer-iconTop a i {
     font-size: 2.4rem;
-    color: var(--second-bg-color);
+    color: var(--dark-second-bg);
 }
 
 /* //////////////////////////////////////////////////////// */
@@ -430,22 +440,22 @@ span {
 
 .projects-container .projects-box {
     flex: 1 1 30rem;
-    background: var(--second-bg-color);
+    background: var(--dark-second-bg);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
-    border: .2rem solid var(--bg-color);
+    border: .2rem solid var(--dark-bg);
     transition: .5s ease;
 }
 
 .projects-container .projects-box:hover {
-    border-color: var(--main-color);
+    border-color: var(--dark-main-color);
     transform: scale(1.02);
 }
 
 .projects-box i {
     font-size: 7rem;
-    color: var(--main-color);
+    color: var(--dark-main-color);
 }
 
 .projects-box h3 {
@@ -461,7 +471,7 @@ span {
 
 /* Раздел Портфолио */
 .portfolio {
-    background: var(--second-bg-color);
+    background: var(--dark-second-bg);
 }
 
 .portfolio h2 {
@@ -479,7 +489,7 @@ span {
 .portfolio-container .portfolio-box {
     position: relative;
     border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--bg-color);
+    box-shadow: 0 0 1rem var(--dark-bg);
     overflow: hidden;
     display: flex;
     width: 430px;
@@ -501,7 +511,7 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .8), var(--main-color));
+    background: linear-gradient(rgba(0, 0, 0, .8), var(--dark-main-color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -531,13 +541,13 @@ span {
     align-items: center;
     width: 5rem;
     height: 5rem;
-    background: var(--text-color);
+    background: var(--dark-text);
     border-radius: 50%;
 }
 
 .portfolio-layer a i {
     font-size: 2rem;
-    color: var(--second-bg-color);
+    color: var(--dark-second-bg);
 }
 
 /* //////////////////////////////////////////////////////// */
@@ -561,10 +571,10 @@ span {
 }
 
 .video-box {
-    background: var(--second-bg-color);
+    background: var(--dark-second-bg);
     padding: 1rem;
     border-radius: 1rem;
-    border: .2rem solid var(--bg-color);
+    border: .2rem solid var(--dark-bg);
     width: 560px;
     display: flex;
     justify-content: center;
@@ -627,14 +637,14 @@ span {
     display: flex;
     width: 800px;
     margin: 64px auto;
-    background: var(--second-bg-color);
+    background: var(--dark-second-bg);
     padding: 10px;
     font-size: 14px;
 }
 
 .resume_wrapper .resume_left {
     width: 35%;
-    background: var(--bg-color);
+    background: var(--dark-bg);
 }
 
 .resume_wrapper .resume_left .resume_image {
@@ -660,14 +670,14 @@ span {
 }
 
 .localization a {
-    color: var(--text-color);
+    color: var(--dark-text);
     transition: .3s;
 }
 
 
 .localization a:hover,
 .localization a.active {
-    color: var(--main-color);
+    color: var(--dark-main-color);
 }
 
 .resume_title_localization {
@@ -677,7 +687,7 @@ span {
 }
 
 .resume_wrapper .resume_left .resume_info a {
-    color: var(--text-color);
+    color: var(--dark-text);
 }
 
 .resume_wrapper .resume_left .resume_bottom {
@@ -715,7 +725,7 @@ span {
 }
 
 .resume_wrapper .resume_left .resume_contact .resume_subtitle {
-    color: var(--text-color);
+    color: var(--dark-text);
     margin-bottom: 2px;
 }
 
@@ -744,11 +754,11 @@ span {
 .resume_wrapper .resume_right {
     width: 65%;
     padding: 20px 40px;
-    color: var(--text-color);
+    color: var(--dark-text);
 }
 
 .resume_wrapper .resume_right .resume_namerole .name {
-    color: var(--text-color);
+    color: var(--dark-text);
     font-size: 32px;
 }
 
@@ -758,7 +768,7 @@ span {
 }
 
 .resume_wrapper .resume_right .resume_item .resume_title {
-    color: var(--text-color);
+    color: var(--dark-text);
 }
 
 .resume_wrapper .resume_right .resume_data {
@@ -830,7 +840,7 @@ span {
     left: 0;
     top: 0;
     background: #3989c9;
-    color: var(--text-color);
+    color: var(--dark-text);
     padding: 0.5em;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     pointer-events: none;
@@ -843,43 +853,6 @@ span {
     top: 2em;
 }
 
-/* //////////////////////////////////////////////////////// */
-
-/* День и ночь */
-.white body {
-    background: rgb(169, 169, 169);
-}
-
-.white .header {
-    background: rgb(128, 128, 128);
-}
-
-.white .about {
-    background: rgb(169, 169, 169);
-}
-
-.white .portfolio {
-    background: rgb(169, 169, 169);
-}
-
-.white .footer {
-    background: rgb(128, 128, 128);
-}
-
-.white .resume_wrapper .resume_left {
-    background: rgb(128, 128, 128);
-}
-
-.white .resume_wrapper {
-    background: rgb(119, 136, 153);
-}
-
-.white .projects-box {
-    background: rgb(128, 128, 128);
-}
-
-/* //////////////////////////////////////////////////////// */
-
 /* Пагинация */
 .pagination {
     display: flex;
@@ -890,23 +863,23 @@ span {
 }
 
 .pagination a {
-    color: var(--text-color);
+    color: var(--dark-text);
     float: left;
     padding: 8px 16px;
     text-decoration: none;
     transition: background-color .3s;
-    border: 1px solid var(--main-color);
+    border: 1px solid var(--dark-main-color);
     margin: 0 4px;
 }
 
 .pagination a.active {
-    background-color: var(--main-color);
-    color: var(--text-color);
-    border: 1px solid var(--main-color);
+    background-color: var(--dark-main-color);
+    color: var(--dark-text);
+    border: 1px solid var(--dark-main-color);
 }
 
 .pagination a:hover:not(.active) {
-    background-color: var(--main-color);
+    background-color: var(--dark-main-color);
 }
 
 /* //////////////////////////////////////////////////////// */

@@ -1,0 +1,45 @@
+/* День и ночь */
+.white body {
+    background: var(--light-bg);
+}
+
+.white .header {
+    background: var(--light-border);
+}
+
+.white .footer {
+    background: var(--light-border);
+}
+
+.white .about {
+    background: var(--light-surface);
+}
+
+.white .portfolio {
+    background: var(--light-surface);
+}
+
+.white .resume_wrapper .resume_left {
+    background: rgb(128, 128, 128);
+}
+
+.white .resume_wrapper {
+    background: rgb(119, 136, 153);
+}
+
+.white .projects-box {
+    background: rgb(128, 128, 128);
+}
+
+.white span {
+    color: var(--light-primary);
+}
+
+.white .navbar a:hover,
+.white .navbar a.active {
+    color: var(--light-primary);
+}
+
+.white .navbar a {
+    color: var(--light-primary);
+}

@@ -20,6 +20,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css\style.css">
     <link rel="stylesheet" href="css\adaptiv.css">
+    <link rel="stylesheet" href="css\white.css">
 
 </head>
 <body>

@@ -15,7 +15,6 @@
 			<div class="resume_item resume_namerole">
 				<div class="name">{{__('resume.Артёмий Дзюба')}}</div>
                 
-
 				
 			</div>
 			<div class="resume_item resume_profile">
@@ -103,7 +102,8 @@
 	</div>
 	<div class="resume_right">
 		<div class="resume_item resume_namerole">
-			<div class="name">{{__('resume.Артёмий Дзюба')}}</div>	
+			<div class="name">{{__('resume.Артёмий Дзюба')}}</div>
+			<h3><span class="multiple-text"></span></h3>
 		</div>
 		<div class="resume_item resume_education">
 			<div class="resume_title">{{__('resume.Образование')}}</div>

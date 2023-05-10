@@ -16,10 +16,7 @@
            
     <a href="#" class="themetoggle">
     <span class="material-symbols-outlined">dark_mode</span></a>
-
         </nav>
-        
-
                 <!-- <div class="navbar"> 
                     @if (Route::has('login'))
                         <div>
@@ -35,9 +32,4 @@
                         </div>
                     @endif
                 </div> -->
-
-
-
-
-
 </header>
