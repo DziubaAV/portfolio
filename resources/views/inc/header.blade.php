@@ -8,8 +8,8 @@
     
         <nav class="navbar">
             <a href="/"                         class="{{ request()->is('/') ? 'active' : null }}" style="--i:1">Главная</a>
-            <a href="{{ asset('about') }}"      class="{{ request()->is('about') ? 'active' : null }}"style="--i:2">Обо мне</a>
             <a href="{{ asset('resume') }}"     class="{{ request()->is('resume') ? 'active' : null }}"style="--i:2">Резюме</a>
+            <a href="{{ asset('services') }}"   class="{{ request()->is('services') ? 'active' : null }}"style="--i:2">Услуги</a>
             <a href="{{ asset('projects') }}"   class="{{ request()->is('projects') ? 'active' : null }}" style="--i:3">Проекты</a>
             <a href="{{ asset('portfolio') }}"  class="{{ request()->is('portfolio') ? 'active' : null }}" style="--i:4">Портфолио</a>
             <a href="{{ asset('contact') }}"    class="{{ request()->is('contact') ? 'active' : null }}" style="--i:5">Контакты</a>

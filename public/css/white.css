@@ -1,3 +1,14 @@
+:root {
+
+    /* Светлая тема */
+    --light-bg: #F7F8F9;
+    --light-border: #F1F2F4;
+    --light-surface: #FFFFFF;
+    --light-text-primary: #091E42;
+    --light-text-secondary: #626F86;
+    --light-primary: #1D7AFC;
+}
+
 /* День и ночь */
 .white body {
     background: var(--light-bg);
@@ -42,4 +53,12 @@
 
 .white .navbar a {
     color: var(--light-primary);
+}
+
+.white body, .logo {
+    color: var(--light-text-secondary);
+}
+
+.white .socialmedia a {
+    color: var(--light-text-primary);
 }
