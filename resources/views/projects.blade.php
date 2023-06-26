@@ -8,7 +8,7 @@
 
 <!-- Services -->
 <section class="projects" id="projects">
-    <h2 class="heading">Мои<span> проекты</span></h2>
+    <h2 class="heading">Мои <span>проекты</span></h2>
 
     <div class="projects-container">
 

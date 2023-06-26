@@ -35,6 +35,7 @@
 
     <script src="{{ asset ('/js/navbar.js') }}"></script>
     <script src="{{ asset ('/js/daynight.js') }}"></script>
+    <script src="{{ asset ('/js/accordion.js') }}"></script>
     
 </body>
 </html>

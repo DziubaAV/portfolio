@@ -1,222 +1,235 @@
     /* Размер экрана 1200 */
     @media (max-width: 1200px) {
-        html {
+      html {
         font-size: 55%;
-        }
+      }
     }
 
     /* Размер экрана 1033 */
     @media (max-width: 1033px) {
-        #menu-icon {
+      #menu-icon {
         display: block;
-        }
-  
-    .white .navbar {
-      background: rgb(119, 136, 153);
-    }
-  
-    .navbar {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      padding: 1rem 3%;
-      background: var(--bg-color);
-      border-top: .1rem solid rgba(0, 0, 0, .2);
-      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-      display: none;
-    }
-  
-    .navbar.active {
-      display: block;
-    }
-  
-    .navbar a {
-      display: block;
-      font-size: 2rem;
-      margin: 3rem 0;
-    }
-  
-    .home {
-      flex-direction: column;
-    }
-  
-    .home-content h3 {
-      font-size: 2.6rem;
-    }
-  
-    .home-content h1 {
-      font-size: 5rem;
-    }
-  
-    .home-img img {
-      width: 70vm;
-      margin-top: 4rem;
-    }
-  
-    .about {
-      flex-direction: column-reverse;
-    }
-  
-    .about img {
-      width: 70vm;
-      margin-top: 4rem;
-    }
-  
-    .projects h2 {
-      margin-bottom: 3rem;
-    }
-  
-    .portfolio h2 {
-      margin-bottom: 3rem;
-    }
-  
-    .video-box {
-      margin-bottom: 3rem;
-    }
-  
-    .portfolio-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .video-wrapper {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  /* Размер экрана 991 */
-  @media (max-width: 991px) {
-    .header {
-      padding: 2rem 3%;
-    }
-  
-    section {
-      padding: 10rem 3% 2rem;
-    }
-  
-    .projects {
-      padding: 7rem;
-    }
-  
-    .portfolio {
-      padding-bottom: 7rem;
-    }
-  
-    .video-wrapper {
-      padding-bottom: 7rem;
-    }
-  
-    .contact {
-      min-height: auto;
-    }
-  
-    .footer {
-      padding: 2rem 3%;
-    }
-  
-    .portfolio-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .video-wrapper {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-   /* Размер экрана 800 */
-@media screen and (max-width: 800px) {
-    .resume_wrapper .resume_right .resume_namerole {
+      }
+
+      .white .navbar {
+        background: rgb(119, 136, 153);
+      }
+
+      .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         display: none;
-    }
+      }
 
-    .resume_wrapper .resume_left .resume_namerole {
+      .navbar.active {
         display: block;
+      }
+
+      .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+      }
+
+      .home {
+        flex-direction: column;
+      }
+
+      .home-content h3 {
+        font-size: 2.6rem;
+      }
+
+      .home-content h1 {
+        font-size: 5rem;
+      }
+      .services_home-content {
+        font-size: 5rem;
+      }
+
+
+      .home-img img {
+        width: 70vm;
+        margin-top: 4rem;
+      }
+
+      .services_home-img {
+        width: 70vm;
+        margin-top: 4rem;
+      }
+
+      .about {
+        flex-direction: column-reverse;
+      }
+
+      .about img {
+        width: 70vm;
+        margin-top: 4rem;
+      }
+
+      .projects h2 {
+        margin-bottom: 3rem;
+      }
+
+      .portfolio h2 {
+        margin-bottom: 3rem;
+      }
+
+      .video-box {
+        margin-bottom: 3rem;
+      }
+
+      .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .video-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
-    .resume_wrapper {
+    /* Размер экрана 991 */
+    @media (max-width: 991px) {
+      .header {
+        padding: 2rem 3%;
+      }
+
+      section {
+        padding: 10rem 3% 2rem;
+      }
+
+      .projects {
+        padding: 7rem;
+      }
+
+      .portfolio {
+        padding-bottom: 7rem;
+      }
+
+      .video-wrapper {
+        padding-bottom: 7rem;
+      }
+
+      .contact {
+        min-height: auto;
+      }
+
+      .footer {
+        padding: 2rem 3%;
+      }
+
+      .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .video-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Размер экрана 800 */
+    @media screen and (max-width: 800px) {
+      .resume_wrapper .resume_right .resume_namerole {
+        display: none;
+      }
+
+      .resume_wrapper .resume_left .resume_namerole {
+        display: block;
+      }
+
+      .resume_wrapper {
         width: 95%;
         margin: 51px auto;
         flex-direction: column;
-    }
+      }
 
-    .resume_wrapper .resume_left,
-    .resume_wrapper .resume_right {
+      .resume_wrapper .resume_left,
+      .resume_wrapper .resume_right {
         width: 100%;
+      }
     }
-}
 
-  /* Размер экрана 630 */
-  @media (max-width: 630px) {
-    .portfolio-container {
-      grid-template-columns: repeat(1, 1fr);
+    /* Размер экрана 630 */
+    @media (max-width: 630px) {
+      .portfolio-container {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .video-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
-  
-    .video-wrapper {
-      grid-template-columns: repeat(1, 1fr);
+
+    /* Размер экрана 450 */
+    @media (max-width: 450px) {
+      html {
+        font-size: 50%;
+      }
+
+      .contact form .input-box {
+        width: 100%;
+      }
     }
-  }
-  
-  /* Размер экрана 450 */
-  @media (max-width: 450px) {
-    html {
-      font-size: 50%;
-    }
-  
-    .contact form .input-box {
-      width: 100%;
-    }
-  }
-  
+
     /* Размер экрана 424 */
-@media screen and (max-width: 424px) {
-    .resume_wrapper .resume_right {
-    padding: 20px 30px;
-    }
+    @media screen and (max-width: 424px) {
+      .resume_wrapper .resume_right {
+        padding: 20px 30px;
+      }
 
-    .resume_wrapper .resume_right .resume_data {
+      .resume_wrapper .resume_right .resume_data {
         flex-direction: column;
-    }
-    
-    .resume_wrapper .resume_right .resume_data .year {
+      }
+
+      .resume_wrapper .resume_right .resume_data .year {
         padding: 0;
         margin-bottom: 5px;
         width: 100%;
         color: #0175b2;
-    }
-    
-    .resume_wrapper .resume_right .resume_data .year:before,
-    .resume_wrapper .resume_right .resume_data .year:after {
+      }
+
+      .resume_wrapper .resume_right .resume_data .year:before,
+      .resume_wrapper .resume_right .resume_data .year:after {
         display: none;
-    }
-    
-    .resume_wrapper .resume_right .resume_data .resume_content {
+      }
+
+      .resume_wrapper .resume_right .resume_data .resume_content {
         width: 100%;
         padding: 0;
-    }
-    
-    .resume_wrapper .resume_right .resume_interests .interests .int_icon {
-        font-size: 24px;
-    }
-}
+      }
 
-  /* Размер экрана 365 */
-  @media (max-width: 365px) {
-    .home-img img {
-      width: 90vm;
+      .resume_wrapper .resume_right .resume_interests .interests .int_icon {
+        font-size: 24px;
+      }
     }
-  
-    .about-img img {
-      width: 90vm;
+
+    /* Размер экрана 365 */
+    @media (max-width: 365px) {
+      .home-img img {
+        width: 90vm;
+      }
+
+      .services_home-img {
+        width: 90vm;
+      }
+
+      .about-img img {
+        width: 90vm;
+      }
+
+      .footer {
+        position: fixed;
+        flex-direction: column-reverse;
+      }
+
+      .footer p {
+        text-align: center;
+        margin-top: 2rem;
+        z-index: 2;
+      }
     }
-  
-    .footer {
-      position: fixed;
-      flex-direction: column-reverse;
-    }
-  
-    .footer p {
-      text-align: center;
-      margin-top: 2rem;
-      z-index: 2;
-    }
-  }

@@ -1,19 +1,18 @@
 <?php
-
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\VideoController;
 use App\Http\Controllers\PortfolioController;
-
+use App\Http\Controllers\QuestionAnswerController;
 
 Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/services', function () {
-    return view('services');
-})->name('services');
+Route::get('/services', [QuestionAnswerController::class, 'index'])->name('services');
+
+
 
 Route::get('/resume', function () {
     return view('resume');
@@ -25,16 +24,10 @@ Route::get('resume/{locale}', function ($locale) {
     return redirect()->back();
 })->name('locale');
 
-
 Route::get('/portfolio', function () {
     return view('portfolio');
 })->name('portfolio');
-
 Route::get('/portfolio', [PortfolioController::class, 'index']);
-
-
-
-
 
 Route::get('/video', function () {
     return view('video');
@@ -42,21 +35,15 @@ Route::get('/video', function () {
 
 Route::get('/video',[VideoController::class, 'allVideo'])->name('youtube-video');
 
-
 Route::get('/projects', function () {
     return view('projects');
 })->name('projects');
 
-
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
+
 Route::post('/contact/submit',[ContactController::class, 'submit'])->name('contact-form');
-
-
-
-
-
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -69,3 +56,4 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
