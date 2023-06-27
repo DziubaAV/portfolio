@@ -104,7 +104,6 @@
 	<div class="resume_right">
 		<div class="resume_item resume_namerole">
 			<div class="resume_name">{{__('resume.Дзюба Артёмий Владимирович')}}</div>
-			<h3><span class="multiple-text"></span></h3>
 		</div>
 		<div class="resume_item resume_education">
 			<div class="resume_title">{{__('resume.Образование')}}</div>

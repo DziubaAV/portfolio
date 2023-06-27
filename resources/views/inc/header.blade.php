@@ -29,40 +29,38 @@
               </li>
             </ul>
           </li> -->
-          <li><a href="{{ asset('resume') }}" class="{{ request()->is('resume') ? 'active' : null }}" style="--i:2">Резюме</a></li>
+          <li><a href="{{ asset('resume') }}" class="{{ request()->is('resume') ? 'active' : null }}">Резюме</a></li>
           <li>
             <a href="#">Услуги</a>
             <i class='bx bxs-chevron-down js-arrow arrow '></i>
             <ul class="js-sub-menu sub-menu">
-              <li><a href="{{ asset('services') }}" class="{{ request()->is('services') ? 'active' : null }}"style="--i:2">Ремонт компьютеров</a></li>
+              <li><a href="{{ asset('services') }}" class="{{ request()->is('services') ? 'active' : null }}">Ремонт компьютеров</a></li>
               <li><a href="#">Создание сайтов</a></li>
             </ul>
           </li>
-          <li><a href="{{ asset('projects') }}"   class="{{ request()->is('projects') ? 'active' : null }}" style="--i:3">Проекты</a></li>
-          <li><a href="{{ asset('portfolio') }}"  class="{{ request()->is('portfolio') ? 'active' : null }}" style="--i:4">Портфолио</a></li>
-          <li><a href="{{ asset('contact') }}" class="{{ request()->is('contact') ? 'active' : null }}" style="--i:5">Контакты</a></li>
+          <li><a href="{{ asset('projects') }}"   class="{{ request()->is('projects') ? 'active' : null }}">Проекты</a></li>
+          <li><a href="{{ asset('portfolio') }}"  class="{{ request()->is('portfolio') ? 'active' : null }}">Портфолио</a></li>
+          <li><a href="{{ asset('contact') }}" class="{{ request()->is('contact') ? 'active' : null }}">Контакты</a></li>
+          @if (Route::has('login'))
+                        @auth
+                    <li><a href="{{ url('/dashboard') }}">Dashboard</a></li>    
+                        @else
+                        <li><a href="{{ route('login') }}">Авторизация</a></li>
+
+                        @if (Route::has('register'))
+                            <li><a href="{{ route('register') }}">Регистрация</a></li>
+                        @endif
+                    @endauth
+                    @endif
         </ul>
+       
       </div>      
     </div>
   </header >
   <script src="/js/script.js"></script>
 
 <!-- Авторизация и Регистрация -->
-  <!-- <div class="navbar"> 
-                    @if (Route::has('login'))
-                        <div>
-                        @auth
-                        <a href="{{ url('/dashboard') }}">Dashboard</a>
-                        @else
-                        <a href="{{ route('login') }}">Авторизация</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Регистрация</a>
-                        @endif
-                    @endauth
-                        </div>
-                    @endif
-                </div> -->
-
+                 
 
 <!-- Конец навигации -->

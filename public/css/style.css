@@ -931,7 +931,7 @@ video h2 {
 /* Портфолию */
 /* Раздел Портфолио */
 .portfolio {
-    background: var(--second-bg);
+    background: var(-b);
 }
 
 .portfolio h2 {
