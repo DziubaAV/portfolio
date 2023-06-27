@@ -16,40 +16,40 @@
    <form action="/contact/submit" method="POST">
     @csrf
     
-    <div class="input-box">
+    <div class="contact_input-box">
         @if ($errors->has('fullname'))
-        <span class="error">{{ $errors->first('fullname') }}</span>
+        <span class="contact_error">{{ $errors->first('fullname') }}</span>
         @endif
     <input type="text" name="fullname" placeholder="Полное имя (обязательно)" value="{{ old('fullname') }}">
         
         @if($errors->has('email'))
-        <span class="error">{{ $errors->first('email') }}</span>
+        <span class="contact_error">{{ $errors->first('email') }}</span>
         @endif
     <input type="email" name="email" placeholder="Адрес электронной почты (обязательно)" value="{{ old('email') }}">     
     </div>
 
-    <div class="input-box">
+    <div class="contact_input-box">
         @if($errors->has('mobile'))
-        <span class="error">{{ $errors->first('mobile') }}</span>
+        <span class="contact_error">{{ $errors->first('mobile') }}</span>
         @endif
     <input type="tel" name="mobile" placeholder="Мобильный телефон (обязательно)" value="{{ old('mobile') }}">
         
         @if($errors->has('email_subject'))
-        <span class="error">{{ $errors->first('email_subject') }}</span>
+        <span class="contact_error">{{ $errors->first('email_subject') }}</span>
         @endif
     <input type="text" name="email_subject" placeholder="Тема письма (обязательно)" maxlength="110" value="{{ old('email_subject') }}"> 
     </div>
 
         @if($errors->has('message'))
-        <span class="error">{{ $errors->first('message') }}</span>
+        <span class="contact_error">{{ $errors->first('message') }}</span>
         @endif
         
-        <div class="counter-box">
-            <textarea class="counte-input" type="text" name="message" cols="30" rows="10" placeholder="Введите сообщения (обязательно)" maxlength="500">{{ old('message') }}</textarea> 
-            <span class="counter-text">
-                    <span class="counter-text_current">0</span>
+        <div class="contact_counter-box">
+            <textarea class="contact_counte-input" type="text" name="message" cols="30" rows="10" placeholder="Введите сообщения (обязательно)" maxlength="500">{{ old('message') }}</textarea> 
+            <span class="contact_counter-text">
+                    <span class="contact_counter-text_current">0</span>
                     /
-                    <span >500</span>
+                    <span>500</span>
                 </span>
         </div>
 
@@ -57,8 +57,8 @@
    
 <!-- Счетчик для Textarea -->
     <script>
-        const ta = document.querySelector('.counte-input');
-        const counter = document.querySelector('.counter-text_current');
+        const ta = document.querySelector('.contact_counte-input');
+        const counter = document.querySelector('.contact_counter-text_current');
 
         ta.addEventListener('input', onInput);
 

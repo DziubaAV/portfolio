@@ -1,235 +1,355 @@
-    /* Размер экрана 1200 */
-    @media (max-width: 1200px) {
-      html {
-        font-size: 55%;
-      }
-    }
+  /* Навигация */
 
-    /* Размер экрана 1033 */
-    @media (max-width: 1033px) {
-      #menu-icon {
-        display: block;
+  @media (max-width:920px) {
+      header .navbar {
+          max-width: 100%;
+          padding: 0 25px;
       }
 
-      .white .navbar {
-        background: rgb(119, 136, 153);
+      header .navbar .logo a {
+          font-size: 27px;
       }
 
-      .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 3%;
-        background: var(--bg-color);
-        border-top: .1rem solid rgba(0, 0, 0, .2);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-        display: none;
+      header .navbar .links li {
+          padding: 0 10px;
+          white-space: nowrap;
       }
 
-      .navbar.active {
-        display: block;
+      header .navbar .links li a {
+          font-size: 17px;
+      }
+  }
+
+  @media (max-width:800px) {
+
+      .navbar .bx-menu {
+          display: block;
       }
 
-      .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
+      header .navbar .nav-links {
+          position: fixed;
+          top: 0;
+          left: -100%;
+          display: block;
+          max-width: 270px;
+          width: 100%;
+          background: var(--bg);
+          line-height: 40px;
+          padding: 20px;
+          transition: all 0.5s ease;
+          z-index: 1000;
       }
 
+      .navbar .nav-links .sidebar-logo {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+      }
+
+      .sidebar-logo .logo-name {
+          font-size: 25px;
+          color: var(--dark-text);
+      }
+
+      .sidebar-logo i,
+      .navbar .bx-menu {
+          font-size: 25px;
+          color: var(--dark-text);
+      }
+
+      header .navbar .links {
+          display: block;
+          margin-top: 20px;
+      }
+
+      header .navbar .links li .arrow {
+          line-height: 40px;
+      }
+
+      header .navbar .links li {
+          display: block;
+      }
+
+      header .navbar .links li .sub-menu {
+          position: relative;
+          top: 0;
+          box-shadow: none;
+          display: none;
+      }
+
+      header .navbar .links li .sub-menu li {
+          border-bottom: none;
+
+      }
+
+      .navbar .links li .sub-menu .more-sub-menu {
+          display: none;
+          position: relative;
+          left: 0;
+      }
+
+      .navbar .links li .sub-menu .more-sub-menu li {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+      }
+
+      .links li:hover .htmlcss-arrow,
+      .links li:hover .js-arrow {
+          transform: rotate(0deg);
+      }
+
+      .navbar .links li .sub-menu .more-sub-menu {
+          display: none;
+      }
+
+      .navbar .links li .sub-menu .more span {
+          display: flex;
+          align-items: center;
+      }
+
+      .links li .sub-menu .more:hover .more-sub-menu {
+          display: none;
+      }
+
+      header .navbar .links li:hover .htmlCss-sub-menu,
+      header .navbar .links li:hover .js-sub-menu {
+          display: none;
+      }
+
+      .navbar .nav-links.show1 .links .htmlCss-sub-menu,
+      .navbar .nav-links.show3 .links .js-sub-menu,
+      .navbar .nav-links.show2 .links .more .more-sub-menu {
+          display: block;
+      }
+
+      .navbar .nav-links.show1 .links .htmlcss-arrow,
+      .navbar .nav-links.show3 .links .js-arrow {
+          transform: rotate(180deg);
+      }
+
+      .navbar .nav-links.show2 .links .more-arrow {
+          transform: rotate(90deg);
+      }
+  }
+
+  @media (max-width:370px) {
+      header .navbar .nav-links {
+          max-width: 100%;
+      }
+  }
+
+  /* Конец навигации */
+
+  /* Footer */
+  @media (max-width: 365px) {
+      .footer {
+          position: fixed;
+          flex-direction: column-reverse;
+      }
+
+      .footer p {
+          text-align: center;
+          margin-top: 2rem;
+          z-index: 2;
+      }
+  }
+
+  @media (max-width: 991px) {
+      .footer {
+          padding: 2rem 3%;
+      }
+  }
+
+  /* Конец Footer */
+
+  /* Главная страница */
+  @media (max-width: 1033px) {
       .home {
-        flex-direction: column;
+          flex-direction: column;
       }
 
       .home-content h3 {
-        font-size: 2.6rem;
+          font-size: 2.6rem;
       }
 
       .home-content h1 {
-        font-size: 5rem;
+          font-size: 5rem;
       }
-      .services_home-content {
-        font-size: 5rem;
-      }
-
 
       .home-img img {
-        width: 70vm;
-        margin-top: 4rem;
+          width: 70vm;
+          margin-top: 4rem;
+      }
+  }
+
+  @media (max-width: 365px) {
+      .home-img img {
+          width: 90vm;
+      }
+  }
+
+  /* Конец "Главная страница" */
+
+  /* Раздел "Контакты" */
+  @media (max-width: 488px) {
+
+      .contact form .contact_input-box {
+          width: 100%;
       }
 
-      .services_home-img {
-        width: 70vm;
-        margin-top: 4rem;
+      .contact_error {
+          font-size: 11px;
+
+      }
+  }
+
+  /* Конец "Контакты" */
+
+  /* Раздел "Резюме" */
+  @media screen and (max-width: 424px) {
+      .resume_wrapper .resume_right {
+          padding: 20px 30px;
       }
 
-      .about {
-        flex-direction: column-reverse;
+      .resume_wrapper .resume_right .resume_data {
+          flex-direction: column;
       }
 
-      .about img {
-        width: 70vm;
-        margin-top: 4rem;
+      .resume_wrapper .resume_right .resume_data .resume_year {
+          padding: 0;
+          margin-bottom: 5px;
+          width: 100%;
+          color: #0175b2;
       }
 
-      .projects h2 {
-        margin-bottom: 3rem;
+      .resume_wrapper .resume_right .resume_data .resume_year:before,
+      .resume_wrapper .resume_right .resume_data .resume_year:after {
+          display: none;
       }
 
-      .portfolio h2 {
-        margin-bottom: 3rem;
+      .resume_wrapper .resume_right .resume_data .resume_content {
+          width: 100%;
+          padding: 0;
       }
 
-      .video-box {
-        margin-bottom: 3rem;
+      .resume_wrapper .resume_right .resume_interests .resume_interests .resume_int_icon {
+          font-size: 24px;
       }
+  }
 
-      .portfolio-container {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .video-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    /* Размер экрана 991 */
-    @media (max-width: 991px) {
-      .header {
-        padding: 2rem 3%;
-      }
-
-      section {
-        padding: 10rem 3% 2rem;
-      }
-
-      .projects {
-        padding: 7rem;
-      }
-
-      .portfolio {
-        padding-bottom: 7rem;
-      }
-
-      .video-wrapper {
-        padding-bottom: 7rem;
-      }
-
-      .contact {
-        min-height: auto;
-      }
-
-      .footer {
-        padding: 2rem 3%;
-      }
-
-      .portfolio-container {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .video-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    /* Размер экрана 800 */
-    @media screen and (max-width: 800px) {
+  @media screen and (max-width: 800px) {
       .resume_wrapper .resume_right .resume_namerole {
-        display: none;
+          display: none;
       }
 
       .resume_wrapper .resume_left .resume_namerole {
-        display: block;
+          display: block;
       }
 
       .resume_wrapper {
-        width: 95%;
-        margin: 51px auto;
-        flex-direction: column;
+          width: 95%;
+          margin: 51px auto;
+          flex-direction: column;
       }
 
       .resume_wrapper .resume_left,
       .resume_wrapper .resume_right {
-        width: 100%;
+          width: 100%;
       }
-    }
+  }
 
-    /* Размер экрана 630 */
-    @media (max-width: 630px) {
-      .portfolio-container {
-        grid-template-columns: repeat(1, 1fr);
+  /* Конец раздел "Резюме" */
+
+  /* Price */
+  @media only screen and (max-width: 600px) {
+      .price_table-row {
+          font-size: 11px;
+      }
+  }
+
+  /* Конец Price */
+
+  /* Раздел Ремонт компьютеров */
+  @media (max-width: 1033px) {
+      .services_home {
+          flex-direction: column;
+      }
+
+      .services_home-content h1 {
+          font-size: 5rem;
+      }
+
+      .services_home-img img {
+          width: 70vm;
+          margin-top: 4rem;
+      }
+  }
+
+  @media (max-width: 365px) {
+      .services_home-img img {
+          width: 90vm;
+      }
+  }
+
+  @media (max-width: 365px) {
+
+      .services_home-img {
+          width: 90vm;
+      }
+  }
+
+  /* Конец Ремонт компьютеров */
+
+  /* Раздел Проекты */
+  @media (max-width: 1033px) {
+      .projects h2 {
+          margin-bottom: 3rem;
+      }
+  }
+
+
+  /* Конец Проекты */
+
+  /* Видео */
+  @media (max-width: 1033px) {
+
+      .video-box {
+          margin-bottom: 3rem;
       }
 
       .video-wrapper {
-        grid-template-columns: repeat(1, 1fr);
+          grid-template-columns: repeat(2, 1fr);
       }
-    }
+  }
 
-    /* Размер экрана 450 */
-    @media (max-width: 450px) {
-      html {
-        font-size: 50%;
+  @media (max-width: 630px) {
+
+      .video-wrapper {
+          grid-template-columns: repeat(1, 1fr);
       }
+  }
 
-      .contact form .input-box {
-        width: 100%;
-      }
-    }
+  /* Конец Видео */
 
-    /* Размер экрана 424 */
-    @media screen and (max-width: 424px) {
-      .resume_wrapper .resume_right {
-        padding: 20px 30px;
-      }
+  /* Портфолио */
 
-      .resume_wrapper .resume_right .resume_data {
-        flex-direction: column;
+
+  @media (max-width: 1033px) {
+
+      .portfolio h2 {
+          margin-bottom: 3rem;
       }
 
-      .resume_wrapper .resume_right .resume_data .year {
-        padding: 0;
-        margin-bottom: 5px;
-        width: 100%;
-        color: #0175b2;
+      .portfolio-container {
+          grid-template-columns: repeat(2, 1fr);
       }
+  }
 
-      .resume_wrapper .resume_right .resume_data .year:before,
-      .resume_wrapper .resume_right .resume_data .year:after {
-        display: none;
+  @media (max-width: 630px) {
+      .portfolio-container {
+          grid-template-columns: repeat(1, 1fr);
       }
+  }
 
-      .resume_wrapper .resume_right .resume_data .resume_content {
-        width: 100%;
-        padding: 0;
-      }
-
-      .resume_wrapper .resume_right .resume_interests .interests .int_icon {
-        font-size: 24px;
-      }
-    }
-
-    /* Размер экрана 365 */
-    @media (max-width: 365px) {
-      .home-img img {
-        width: 90vm;
-      }
-
-      .services_home-img {
-        width: 90vm;
-      }
-
-      .about-img img {
-        width: 90vm;
-      }
-
-      .footer {
-        position: fixed;
-        flex-direction: column-reverse;
-      }
-
-      .footer p {
-        text-align: center;
-        margin-top: 2rem;
-        z-index: 2;
-      }
-    }
+  /* Конец Портфолио */

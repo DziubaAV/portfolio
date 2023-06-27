@@ -20,21 +20,19 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css\style.css">
     <link rel="stylesheet" href="css\adaptiv.css">
-    <link rel="stylesheet" href="css\white.css">
 
 </head>
 <body>
-        
-        @include('inc.header') 
-        @yield('content')
-        @include('inc.footer')
+
+            @include('inc.header')
+            @yield('content')
+            @include('inc.footer')
     
     <!-- Script -->
     <script src="{{ asset ('https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js') }}"></script>
     <script src="{{ asset ('/js/typed.js') }}"></script>
 
     <script src="{{ asset ('/js/navbar.js') }}"></script>
-    <script src="{{ asset ('/js/daynight.js') }}"></script>
     <script src="{{ asset ('/js/accordion.js') }}"></script>
     
 </body>

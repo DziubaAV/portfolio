@@ -6,7 +6,7 @@
 @endsection
 @section('content')
 
-<!-- Раздел обо мне -->
+<!-- Раздел "Главная страница" -->
 <section class="home" id="home">
     <div class="home-img">
         <img src="img\portfolio_about.png" alt="">
@@ -22,5 +22,5 @@
         mollitia eaque eveniet veniam recusandae id omnis, consequatur quaerat quibusdam.</p>
     </div>
 </section>
-
+<!-- Конец "Главная страница" -->
 @endsection

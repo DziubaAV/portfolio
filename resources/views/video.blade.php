@@ -20,9 +20,8 @@
         </div>
         @endforeach
     </div>
-    
-</section>
-    
+
+    <!-- Пагинация -->
 <div class="pagination">
   @if ($videos->lastPage() > 1)
     <a href="{{ $videos->previousPageUrl() }}">«</a>
@@ -32,4 +31,9 @@
     <a href="{{ $videos->nextPageUrl() }}">»</a>
   @endif
 </div>   
+<!-- Конец Пагинация --> 
+
+</section>
+    <!-- Конец Видео -->
+
 @endsection

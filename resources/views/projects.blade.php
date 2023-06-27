@@ -6,7 +6,7 @@
 @endsection
 @section('content')
 
-<!-- Services -->
+<!-- Проекты-->
 <section class="projects" id="projects">
     <h2 class="heading">Мои <span>проекты</span></h2>
 

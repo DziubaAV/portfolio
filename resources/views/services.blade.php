@@ -21,22 +21,22 @@
 <!-- Price -->
 <section class="price" id="price">
    <h2 class="heading"> <span>Цена</span> </h2>
-   <div class="table-box">
-        <div class="table-row table-head">
-            <div class="table-cell first-cell">
+   <div class="price_table-box">
+        <div class="price_table-row price_table-head">
+            <div class="price_table-cell price_first-cell">
                 <p>Виды работ</p>
             </div>
-            <div class="table-cell last-cell">
+            <div class="price_table-cell price_last-cell">
                 <p>Цена</p>
             </div> 
         </div>
         @foreach($prices as $price)
-        <div class="table-row">
+        <div class="price_table-row">
         
-            <div class="table-cell first-cell">
+            <div class="price_table-cell price_first-cell">
                 <p>{{ $price->service }}</p>
             </div>
-            <div class="table-cell last-cell">
+            <div class="price_table-cell price_last-cell">
                 <p>{{ $price->price }}</p>
             </div> 
              
@@ -50,14 +50,14 @@
 <section class="faq" id="faq">
     <h2 class="heading">Часто задаваемые <span>вопросы</span></h2>
 
-    <div class="accordion-container">
+    <div class="faq_accordion-container">
         @foreach($questionAnswers as $questionAnswer)
-            <div class="accordion">
-                <div class="accordion-heading">
+            <div class="faq_accordion">
+                <div class="faq_accordion-heading">
                     <h3>{{ $questionAnswer->question }}</h3>
                     <i class='bx bxs-chevron-down'></i>
                 </div>
-                <p class="accordion-content">{{ $questionAnswer->answer }}</p>
+                <p class="faq_accordion-content">{{ $questionAnswer->answer }}</p>
             </div>
         @endforeach
     </div>

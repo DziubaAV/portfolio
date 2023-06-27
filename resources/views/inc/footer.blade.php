@@ -1,5 +1,4 @@
-    <!-- Подвал -->
-    
+    <!-- Footer -->
     <footer class="footer">
     <div class="socialmedia">
                 <a href="https://www.facebook.com/dzartsiomi"   title="Facebook"    target="_blank" style="--i:6"><i class='bx bxl-facebook'></i></a>
@@ -11,8 +10,5 @@
         <div class="footer-text">
             <p>2023 by Dziuba Artsiomi</p>
         </div>
-        
-        <!-- <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-        </div> -->
     </footer>
+    <!-- Конец Footer -->

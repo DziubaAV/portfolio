@@ -1,6 +1,6 @@
 <?php
 return [
-    'Артёмий Дзюба' => 'Artsiomi Dziuba',
+    'Дзюба Артёмий Владимирович' => 'Artsiomi Dziuba',
     'Образование' => 'EDUCATION',
     'Опыт работы' => 'EXPERIENCE',
     'Интересы' => 'INTERESTS',
