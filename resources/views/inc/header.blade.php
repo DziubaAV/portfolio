@@ -41,7 +41,8 @@
           <li><a href="{{ asset('projects') }}"   class="{{ request()->is('projects') ? 'active' : null }}">Проекты</a></li>
           <li><a href="{{ asset('portfolio') }}"  class="{{ request()->is('portfolio') ? 'active' : null }}">Портфолио</a></li>
           <li><a href="{{ asset('contact') }}" class="{{ request()->is('contact') ? 'active' : null }}">Контакты</a></li>
-        </ul>  
+        </ul>
+       
       </div>      
     </div>
   </header >
