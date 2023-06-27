@@ -41,19 +41,7 @@
           <li><a href="{{ asset('projects') }}"   class="{{ request()->is('projects') ? 'active' : null }}">Проекты</a></li>
           <li><a href="{{ asset('portfolio') }}"  class="{{ request()->is('portfolio') ? 'active' : null }}">Портфолио</a></li>
           <li><a href="{{ asset('contact') }}" class="{{ request()->is('contact') ? 'active' : null }}">Контакты</a></li>
-          @if (Route::has('login'))
-                        @auth
-                    <li><a href="{{ url('/dashboard') }}">Dashboard</a></li>    
-                        @else
-                        <li><a href="{{ route('login') }}">Авторизация</a></li>
-
-                        @if (Route::has('register'))
-                            <li><a href="{{ route('register') }}">Регистрация</a></li>
-                        @endif
-                    @endauth
-                    @endif
-        </ul>
-       
+        </ul>  
       </div>      
     </div>
   </header >
