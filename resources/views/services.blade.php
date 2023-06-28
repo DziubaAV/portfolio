@@ -61,6 +61,7 @@
             </div>
         @endforeach
     </div>
+    
 </section>
 <!-- FAQ end -->
 

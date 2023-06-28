@@ -2,10 +2,10 @@
 <header>
     <div class="navbar">
       <i class='bx bx-menu'></i>
-      <div class="logo"><a>Portfolio</a></div>
+      <div class="logo"><a><span>DzArt</span>siomi</a></div>
       <div class="nav-links">
         <div class="sidebar-logo">
-          <span class="logo-name">Portfolio</span>
+          <span class="logo-name"><span>DzArt</span>siomi</span>
           <i class='bx bx-x' ></i>
         </div>
         <ul class="links">
@@ -35,21 +35,21 @@
             <i class='bx bxs-chevron-down js-arrow arrow '></i>
             <ul class="js-sub-menu sub-menu">
               <li><a href="{{ asset('services') }}" class="{{ request()->is('services') ? 'active' : null }}">Ремонт компьютеров</a></li>
-              <li><a href="#">Создание сайтов</a></li>
+              <!-- <li><a href="#">Создание сайтов</a></li> -->
             </ul>
           </li>
           <li><a href="{{ asset('projects') }}"   class="{{ request()->is('projects') ? 'active' : null }}">Проекты</a></li>
           <li><a href="{{ asset('portfolio') }}"  class="{{ request()->is('portfolio') ? 'active' : null }}">Портфолио</a></li>
-          <li><a href="{{ asset('contact') }}" class="{{ request()->is('contact') ? 'active' : null }}">Контакты</a></li>
-        </ul>
-       
+          <li><a href="{{ asset('contact') }}" class="{{ request()->is('contact') ? 'active' : null }}">Контакты</a></li>  
+          <hr>
+          <div class="vertical-line"></div>
+          <li><a href="#" onclick="changeIcon(event)" id="themeToggle"><i class='bx bxs-sun' id="icon"></i></a></li>
+        
+      
+      </ul>
       </div>      
     </div>
   </header >
-  <script src="/js/script.js"></script>
-
-<!-- Авторизация и Регистрация -->
-
-                 
-
 <!-- Конец навигации -->
+
+

@@ -22,6 +22,16 @@
 
   @media (max-width:800px) {
 
+      .vertical-line {
+          display: none;
+      }
+
+      hr {
+          height: 1px;
+          background-color: var(--main-color);
+          margin: 15px 0;
+      }
+
       .navbar .bx-menu {
           display: block;
       }
@@ -220,7 +230,7 @@
           padding: 0;
           margin-bottom: 5px;
           width: 100%;
-          color: #0175b2;
+          color: var(--main-color);
       }
 
       .resume_wrapper .resume_right .resume_data .resume_year:before,

@@ -16,10 +16,12 @@
     <h3>Hello, It's Me</h3>
         <h1>Artsiomi Dziuba</h1>
         <h3>And I a <span class="multiple-text"></span></h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore expedita praesentium,
-        vel iusto sit recusandae quasi qui dolore obcaecati, quo vero tempora. Consectetur iste dolorum 
-        voluptatibus eligendi non! Magnam doloremque provident nulla hic, officia laboriosam architecto 
-        mollitia eaque eveniet veniam recusandae id omnis, consequatur quaerat quibusdam.</p>
+        <div class="home_text">
+        <p>Добро пожаловать на мой веб-сайт!</p>
+        <p>Здесь вы найдете развлекательный контент, который ни в коем случае не стремится оскорбить или навредить кому-либо.</p>
+        <p>Желаю вам прекрасного дня и приятного пребывания в виртуальном пространстве!</p>
+        <p>Если у вас возникнут какие-либо проблемы с функциональностью сайта или у вас появятся предложения по его улучшению, пожалуйста, поделитесь своим мнением со мной, отправив письмо на адрес <a href="mailto:dz.artsiomi@gmail.com"><span>dz.artsiomi@gmail.com</span></a>.</p>
+        </div>
     </div>
 </section>
 <!-- Конец "Главная страница" -->

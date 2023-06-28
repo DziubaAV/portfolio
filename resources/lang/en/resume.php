@@ -10,6 +10,7 @@ return [
     'Контакты' => 'CONTACTS',
     'Телефон' => 'Phone',
     'Навыки' => 'Skills',
+    'Языки' => 'Languages',
     'Тайский бокс' => 'Thai boxing',
     'Эндуро' => 'Enduro',
     'Фридайвинг' => 'Freediving',
@@ -25,6 +26,20 @@ return [
     'РУП "Центр экспертиз и испытаний в здравоохранении"' => 'Center for examinations and tests in health service" Republican unitary enterprise',
     'Ведущий специалист' => 'Leading specialist',
     'настоящее время' => 'present',
+    'Русский' => 'Russian',
+    'Белорусский' => 'Belarusian',
+    'Английский' => 'English',
+    'Простой' => 'Simple',
+    'Базовый' => 'Base',
+    'Опытный' => 'Experienced',
+    'Родной' => 'Native',
+    'Родной' => 'Native',
+    'Качества' => 'Qualities',
+    'Усидчивость' => 'Persistence',
+    'Внимательность' => 'Caution',
+    'Педантичность' => 'Pedantry',
+    'Коммуникабельность' => 'Sociability',
+
 
     // Повышение квалификации
     'Повышение квалификации' => 'Training',

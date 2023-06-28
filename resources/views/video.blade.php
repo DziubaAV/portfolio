@@ -8,7 +8,7 @@
 
 <!-- Раздел Видео -->
 <section class="video" id="video">
-    <h2 class="heading">Мое<span> видео</span></h2>
+    <h2 class="heading">Галерея<span> видео</span></h2>
 
     <div class="video-wrapper">
     @foreach($videos as $video)

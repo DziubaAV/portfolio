@@ -5,9 +5,22 @@
     /* Темная тема */
     --bg: #1f242d;
     --second-bg: #323946;
-    --dark-main-color: #0ef;
-    --dark-text: #fff;
+    --main-color: #0ef;
+    --text: #fff;
+
+    color-scheme: light;
 }
+
+/* Светлая тема */
+.dark {
+    --bg: #31708E;
+    --second-bg: #5085A5;
+    --main-color: #8FC1E3;
+    --text: #F7F9FB;
+
+    color-scheme: dark;
+}
+
 
 * {
     margin: 0;
@@ -22,7 +35,7 @@
 
 body {
     background: var(--dark-bg);
-    color: var(--dark-text);
+    color: var(--text);
 }
 
 html {
@@ -65,7 +78,7 @@ header .navbar {
 
 .navbar .logo a {
     font-size: 30px;
-    color: var(--dark-text);
+    color: var(--text);
     font-weight: 600;
 }
 
@@ -91,14 +104,14 @@ header .navbar .links li a {
     height: 100%;
     text-decoration: none;
     white-space: nowrap;
-    color: var(--dark-text);
+    color: var(--text);
     font-size: 18px;
     font-weight: 500;
 }
 
 header .navbar .links li a:hover,
 header .navbar .links li a.active {
-    color: var(--dark-main-color);
+    color: var(--main-color);
 }
 
 .links li:hover .htmlcss-arrow,
@@ -112,7 +125,7 @@ header .navbar .links li .arrow {
     line-height: 70px;
     text-align: center;
     display: inline-block;
-    color: var(--dark-text);
+    color: var(--text);
     transition: all 0.3s ease;
 }
 
@@ -137,7 +150,7 @@ header .navbar .links li:hover .js-sub-menu {
 }
 
 .navbar .links li .sub-menu a {
-    color: var(--dark-text);
+    color: var(--text);
     font-size: 15px;
     font-weight: 500;
 }
@@ -210,18 +223,18 @@ header .navbar .links li:hover .js-sub-menu {
     width: 4rem;
     height: 4rem;
     background: transparent;
-    border: .2rem solid var(--dark-main-color);
+    border: .2rem solid var(--main-color);
     border-radius: 50%;
     font-size: 2rem;
-    color: var(--dark-main-color);
+    color: var(--main-color);
     transition: .5s ease;
     margin: 1rem;
 }
 
 .socialmedia a:hover {
-    background: var(--dark-main-color);
+    background: var(--main-color);
     color: var(--dark-second-bg);
-    box-shadow: 0 0 1rem var(--dark-main-color);
+    box-shadow: 0 0 1rem var(--main-color);
 }
 
 /* Конец Footer */
@@ -275,6 +288,15 @@ header .navbar .links li:hover .js-sub-menu {
     /* opacity: 0;
     animation: sliderRight 1s ease forwards;
     animation-delay: 1s; */
+}
+
+.home_text {
+    line-height: 1.5;
+    color: var(--text);
+}
+
+.home_text p {
+    font-size: 18px;
 }
 
 @keyframes ZoomIn {
@@ -368,14 +390,14 @@ header .navbar .links li:hover .js-sub-menu {
     width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
-    color: var(--dark-text);
+    color: var(--text);
     background: var(--bg);
     border-radius: .8rem;
     margin: .7rem 0;
 }
 
 ::placeholder {
-    color: var(--dark-text);
+    color: var(--text);
 }
 
 
@@ -400,7 +422,7 @@ header .navbar .links li:hover .js-sub-menu {
     display: inline-block;
     width: 100%;
     font-size: 1.6rem;
-    color: var(--dark-text);
+    color: var(--text);
     background: var(--bg);
     border-radius: .8rem;
     margin: .7rem 0;
@@ -422,15 +444,15 @@ header .navbar .links li:hover .js-sub-menu {
 }
 
 span {
-    color: var(--dark-main-color);
+    color: var(--main-color);
 }
 
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
-    background: var(--dark-main-color);
+    background: var(--bg);
     border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--dark-main-color);
+    box-shadow: 0 0 1rem var(--main-color);
     font-size: 1.6rem;
     color: var(--dark-second-bg);
     letter-spacing: .1rem;
@@ -474,7 +496,7 @@ span {
 }
 
 .resume_wrapper .resume_title {
-    color: var(--dark-text);
+    color: var(--text);
     text-transform: uppercase;
     font-weight: 700;
     font-size: 16px;
@@ -487,14 +509,14 @@ span {
 }
 
 .localization a {
-    color: var(--dark-text);
+    color: var(--text);
     transition: .3s;
 }
 
 
 .localization a:hover,
 .localization a.active {
-    color: var(--dark-main-color);
+    color: var(--main-color);
 }
 
 .resume_title_localization {
@@ -504,7 +526,7 @@ span {
 }
 
 .resume_wrapper .resume_left .resume_info a {
-    color: var(--dark-text);
+    color: var(--text);
 }
 
 .resume_wrapper .resume_left .resume_bottom {
@@ -526,7 +548,7 @@ span {
 
 .resume_wrapper .resume_namerole .resume_name {
     font-size: 20px;
-    color: var(--dark-text);
+    color: var(--text);
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 5px;
@@ -538,7 +560,7 @@ span {
 }
 
 .resume_wrapper .resume_left .resume_contact .resume_subtitle {
-    color: var(--dark-text);
+    color: var(--text);
     margin-bottom: 2px;
 }
 
@@ -552,7 +574,7 @@ span {
     position: relative;
     width: 125px;
     height: 20px;
-    background: var(--dark-text);
+    background: var(--text);
 }
 
 .resume_wrapper .resume_left .resume_skills .resume_skills_list .resume_skills_bar p span {
@@ -567,16 +589,16 @@ span {
 .resume_wrapper .resume_right {
     width: 65%;
     padding: 20px 40px;
-    color: var(--dark-text);
+    color: var(--text);
 }
 
 .resume_wrapper .resume_right .resume_namerole .resume_name {
-    color: var(--dark-text);
+    color: var(--text);
     font-size: 26px;
 }
 
 .resume_wrapper .resume_right .resume_item .resume_title {
-    color: var(--dark-text);
+    color: var(--text);
 }
 
 .resume_wrapper .resume_right .resume_data {
@@ -645,10 +667,9 @@ span {
     width: 200px;
     left: 0;
     top: 0;
-    background: #3989c9;
-    color: var(--dark-text);
+    background: var(--main-color);
+    color: var(--text);
     padding: 0.5em;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     pointer-events: none;
     opacity: 0;
     transition: 1s;
@@ -706,13 +727,13 @@ span {
     margin: 10px auto;
     background: var(--second-bg);
     padding: 12px 0;
-    color: var(--dark-text);
+    color: var(--text);
     font-size: 15px;
     box-shadow: 0 1px 4px 0px var(--second-bg);
 }
 
 .price_table-head {
-    background: var(--dark-main-color);
+    background: var(--main-color);
     box-shadow: none;
     color: black;
     font-weight: 600;
@@ -762,7 +783,7 @@ span {
 }
 
 .faq .faq_accordion-container .faq_accordion.active .faq_accordion-heading {
-    background: var(--dark-main-color);
+    background: var(--main-color);
 }
 
 .faq .faq_accordion-container .faq_accordion.active .faq_accordion-heading h3 {
@@ -784,7 +805,7 @@ span {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    background: var(--dark-main-color);
+    background: var(--main-color);
     padding: 1.5rem 2rem;
 }
 
@@ -801,7 +822,7 @@ span {
     font-size: 1.6rem;
     padding: 1.5rem 2rem;
     border: black;
-    color: white;
+    color: var(--text);
     border-top: 0;
     line-height: 2;
     display: none;
@@ -838,13 +859,13 @@ span {
 }
 
 .projects-container .projects-box:hover {
-    border-color: var(--dark-main-color);
+    border-color: var(--main-color);
     transform: scale(1.02);
 }
 
 .projects-box i {
     font-size: 7rem;
-    color: var(--dark-main-color);
+    color: var(--main-color);
 }
 
 .projects-box h3 {
@@ -907,28 +928,27 @@ video h2 {
 }
 
 .pagination a {
-    color: var(--dark-text);
+    color: var(--text);
     float: left;
     padding: 8px 16px;
     text-decoration: none;
     transition: background-color .3s;
-    border: 1px solid var(--dark-main-color);
+    border: 1px solid var(--main-color);
     margin: 0 4px;
 }
 
 .pagination a.active {
-    background-color: var(--dark-main-color);
-    color: var(--dark-text);
-    border: 1px solid var(--dark-main-color);
+    background-color: var(--main-color);
+    color: var(--text);
+    border: 1px solid var(--main-color);
 }
 
 .pagination a:hover:not(.active) {
-    background-color: var(--dark-main-color);
+    background-color: var(--main-color);
 }
 
 /* Конец Пагинация */
 
-/* Портфолию */
 /* Раздел Портфолио */
 .portfolio {
     background: var(--second-bg);
@@ -971,7 +991,7 @@ video h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .8), var(--dark-main-color));
+    background: linear-gradient(rgba(0, 0, 0, .8), var(--main-color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1001,7 +1021,7 @@ video h2 {
     align-items: center;
     width: 5rem;
     height: 5rem;
-    background: var(--dark-text);
+    background: var(--text);
     border-radius: 50%;
 }
 
@@ -1011,3 +1031,9 @@ video h2 {
 }
 
 /* Конец Портфолио */
+
+/* День ночь */
+.bxs-moon, .bxs-sun {
+    font-size: 26px;
+}
+/* Конец день ночь */

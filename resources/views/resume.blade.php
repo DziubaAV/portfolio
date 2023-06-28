@@ -15,44 +15,41 @@
 		<div class="resume_bottom">
 			<div class="resume_item resume_namerole">
 				<div class="resume_name">{{__('resume.Дзюба Артёмий Владимирович')}}</div>
-                
-
 			</div>
-			<div class="resume_item resume_profile">
 
+			<!-- Профиль -->
+			<div class="resume_item resume_profile">
 			<div class="resume_title_localization">
 				<div class="resume_title">{{__('resume.Профиль')}}</div>
-					
 					<div class="localization">
 						<a href="{{ route('locale', ['locale' => 'ru']) }} " class="{{ app()->getLocale() == 'ru' ? 'active' : '' }}">RU</a>
 						/
 						<a href="{{ route('locale', ['locale' => 'en']) }}" class="{{ app()->getLocale() == 'en' ? 'active' : '' }}">EN</a>
 					</div>
-				</div>
-				
-			
-				<div class="resume_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				</div>			
+				<!-- <div class="resume_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</div>
-
+				</div> -->
 			</div>
 
+			<!-- Адрес -->
 			<div class="resume_item resume_address">
 				<div class="resume_title">{{__('resume.Адрес')}}</div>
 				<div class="resume_info">
                 {{__('resume.Минск, Республика Беларусь')}}
 				</div>
 			</div>
+
+			<!-- Контакты -->
 			<div class="resume_item resume_contact">
 				<div class="resume_title">{{__('resume.Контакты')}}</div>
 				<div class="resume_info">
 					<div class="resume_subtitle"></div>
 					<div class="resume_subinfo">{{__('resume.Телефон')}}: <a href="tel:+375291875526">+375 29 187-55-26</a></div>
-
 				</div>
 				<div class="resume_info">
 					<div class="resume_subtitle"></div>
@@ -62,43 +59,101 @@
 					<div class="resume_subinfo"><a href="https://www.linkedin.com/in/dzartsiomi/" title="Linkedin" target="_blank">Linkedin</a></div>
 				</div>
 			</div>
+
+			<!-- Навыки -->
 			<div class="resume_item resume_skills">
 				<div class="resume_title">{{__('resume.Навыки')}}</div>
 				<div class="resume_info">
+
 					<div class="resume_skills_list">
-						<div class="resume_skills_left">HTML</div>
-						<div class="resume_skills_bar">
+						<div class="resume_skills_left">Laravel</div>
+						<p><span style="color: white">{{__('resume.Базовый')}}</span></p>
+						<!-- <div class="resume_skills_bar">
 							<p>
 								<span style="width: 90%"></span>
 							</p>
-						</div>
+						</div> -->
 					</div>
+
+					<div class="resume_skills_list">
+						<div class="resume_skills_left">PHP</div>
+						<p><span style="color: white">{{__('resume.Базовый')}}</span></p>
+					</div>
+
+					<div class="resume_skills_list">
+						<div class="resume_skills_left">HTML</div>
+						<p><span style="color: white">{{__('resume.Опытный')}}</span></p>
+					</div>
+
 					<div class="resume_skills_list">
 						<div class="resume_skills_left">CSS</div>
-						<div class="resume_skills_bar">
-							<p>
-								<span style="width: 80%"></span>
-							</p>
-						</div>
+						<p><span style="color: white">{{__('resume.Опытный')}}</span></p>
 					</div>
+
 					<div class="resume_skills_list">
-						<div class="resume_skills_left">Javascript</div>
-						<div class="resume_skills_bar">
-							<p>
-								<span style="width: 50%"></span>
-							</p>
-						</div>
+						<div class="resume_skills_left">JS</div>
+						<p><span style="color: white">{{__('resume.Базовый')}}</span></p>
 					</div>
+
 					<div class="resume_skills_list">
 						<div class="resume_skills_left">Photoshop</div>
-						<div class="resume_skills_bar">
-							<p>
-								<span style="width: 95%"></span>
-							</p>
-						</div>
+						<p><span style="color: white">{{__('resume.Опытный')}}</span></p>
 					</div>
 				</div>
 			</div>
+
+			<!-- Языки -->
+			<div class="resume_item resume_skills">
+				<div class="resume_title">{{__('resume.Языки')}}</div>
+				<div class="resume_info">
+
+					<div class="resume_skills_list">
+						<div class="resume_skills_left">{{__('resume.Белорусский')}}</div>
+						<p><span style="color: white">{{__('resume.Родной')}}</span></p>
+						<!-- <div class="resume_skills_bar">
+							<p>
+								<span style="width: 90%"></span>
+							</p>
+						</div> -->
+					</div>
+
+					<div class="resume_skills_list">
+						<div class="resume_skills_left">{{__('resume.Русский')}}</div>
+						<p><span style="color: white">{{__('resume.Родной')}}</span></p>
+					</div>
+
+					<div class="resume_skills_list">
+						<div class="resume_skills_left">{{__('resume.Английский')}}</div>
+						<p><span style="color: white">B1</span></p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Качества -->
+			<div class="resume_item resume_skills">
+				<div class="resume_title">{{__('resume.Качества')}}</div>
+				<div class="resume_info">
+
+					<div class="resume_skills_list">
+						<div class="resume_skills_left">{{__('resume.Усидчивость')}}</div>
+					</div>
+
+					<div class="resume_skills_list">
+						<div class="resume_skills_left">{{__('resume.Внимательность')}}</div>
+					</div>
+
+					<div class="resume_skills_list">
+						<div class="resume_skills_left">{{__('resume.Педантичность')}}</div>
+					</div>
+
+					<div class="resume_skills_list">
+						<div class="resume_skills_left">{{__('resume.Коммуникабельность')}}</div>
+					</div>
+				</div>
+			</div>
+
+
+
 		</div>
 	</div>
 	<div class="resume_right">

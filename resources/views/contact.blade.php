@@ -32,7 +32,7 @@
         @if($errors->has('mobile'))
         <span class="contact_error">{{ $errors->first('mobile') }}</span>
         @endif
-    <input type="tel" name="mobile" placeholder="Мобильный телефон (обязательно)" value="{{ old('mobile') }}">
+    <input type="tel" name="mobile" placeholder="Мобильный телефон" value="{{ old('mobile') }}">
         
         @if($errors->has('email_subject'))
         <span class="contact_error">{{ $errors->first('email_subject') }}</span>
@@ -54,7 +54,12 @@
         </div>
 
     <button class="btn" type="submit">Отправить</button>
-   
+    
+ 
+
+
+
+
 <!-- Счетчик для Textarea -->
     <script>
         const ta = document.querySelector('.contact_counte-input');
