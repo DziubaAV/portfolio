@@ -906,7 +906,6 @@ video h2 {
     padding: 1rem;
     border-radius: 1rem;
     border: .2rem solid var(--dark-bg);
-    width: 560px;
     display: flex;
     justify-content: center;
     align-items: center;

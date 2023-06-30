@@ -35,7 +35,7 @@
             <i class='bx bxs-chevron-down js-arrow arrow '></i>
             <ul class="js-sub-menu sub-menu">
               <li><a href="{{ asset('services') }}" class="{{ request()->is('services') ? 'active' : null }}">Ремонт компьютеров</a></li>
-              <!-- <li><a href="#">Создание сайтов</a></li> -->
+              <li><a href="{{ asset('site-creation') }}" class="{{ request()->is('site-creation') ? 'active' : null }}">Создание WEB-страницы</a></li>
             </ul>
           </li>
           <li><a href="{{ asset('projects') }}"   class="{{ request()->is('projects') ? 'active' : null }}">Проекты</a></li>

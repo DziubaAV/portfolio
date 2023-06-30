@@ -13,8 +13,8 @@
     <div class="video-wrapper">
     @foreach($videos as $video)
         <div class="video-container">
-            <div onclick="loadVideo(this, '{!! $video->video_url !!}');">
-                <img class='video-img' src="\img\play-regular-24.png" alt="{$video->video_name}}">
+            <div onclick="loadVideo(this, '{!! $video->video_url !!}', true);">
+                <img class='video-img' src="https://img.youtube.com/vi/{{ ($video->embed) }}/0.jpg" alt="{{ $video->video_name }}">
             </div>
             <div class="video-box">
                 <p>{{$video->video_name}}</p>

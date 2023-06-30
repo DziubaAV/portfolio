@@ -5,6 +5,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\VideoController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\QuestionAnswerController;
+use App\Http\Controllers\SiteCreationController;
 
 Route::get('/', function () {
     return view('home');
@@ -34,6 +35,13 @@ Route::get('/video', function () {
 })->name('video');
 
 Route::get('/video',[VideoController::class, 'allVideo'])->name('youtube-video');
+
+
+Route::get('site-creation', function () {
+    return view('site-creation');
+})->name('site-creation');
+
+
 
 Route::get('/projects', function () {
     return view('projects');

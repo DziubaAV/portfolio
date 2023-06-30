@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('videos', function (Blueprint $table) {
             $table->id();
             $table->text('video_url');
+            $table->text('embed');
             $table->text('video_name');
             $table->timestamps();
         });
-
     }
 
     /**
