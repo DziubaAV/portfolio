@@ -8,20 +8,21 @@
 
 <!-- Раздел Видео -->
 <section class="video" id="video">
-    <h2 class="heading">Галерея<span> видео</span></h2>
+    <h2 class="heading">Мое<span> видео</span></h2>
 
     <div class="video-wrapper">
     @foreach($videos as $video)
         <div class="video-container">
-            {!! $video->video_url !!}
+            <div onclick="loadVideo(this, '{!! $video->video_url !!}');">
+                <img class='video-img' src="\img\play-regular-24.png" alt="{$video->video_name}}">
+            </div>
             <div class="video-box">
                 <p>{{$video->video_name}}</p>
             </div>
         </div>
-        @endforeach
-    </div>
+    @endforeach
+</div>
 
-    <!-- Пагинация -->
 <div class="pagination">
   @if ($videos->lastPage() > 1)
     <a href="{{ $videos->previousPageUrl() }}">«</a>
@@ -31,9 +32,7 @@
     <a href="{{ $videos->nextPageUrl() }}">»</a>
   @endif
 </div>   
-<!-- Конец Пагинация --> 
-
 </section>
-    <!-- Конец Видео -->
+    
 
 @endsection

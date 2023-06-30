@@ -895,7 +895,7 @@ video h2 {
     flex-wrap: wrap;
 }
 
-.video-container iframe {
+.video-container iframe, .video-img {
     padding: 1rem;
     width: 560px;
     height: 315px;
