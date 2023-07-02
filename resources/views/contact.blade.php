@@ -9,8 +9,6 @@
 <!-- Раздел контакты -->
 
 <section class="contact" id="contact">
-
-
     <h2 class="heading">Напишите <span>мне!</span></h2>
 
    <form action="/contact/submit" method="POST">

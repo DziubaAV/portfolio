@@ -188,14 +188,20 @@
       }
 
       .home-img img {
-          width: 70vm;
+          width: 841px;
           margin-top: 4rem;
       }
   }
 
+  @media (max-width: 800px) {
+    .home-img img {
+        width: 653px;
+    }
+}
+
   @media (max-width: 365px) {
       .home-img img {
-          width: 90vm;
+          width: 310px;
       }
   }
 
@@ -291,21 +297,20 @@
       }
 
       .services_home-img img {
-          width: 70vm;
-          margin-top: 4rem;
+        width: 841px;
+        margin-top: 4rem;
       }
   }
 
-  @media (max-width: 365px) {
-      .services_home-img img {
-          width: 90vm;
-      }
-  }
+  @media (max-width: 800px) {
+    .home-img img {
+        width: 653px;
+    }
+}
 
   @media (max-width: 365px) {
-
-      .services_home-img {
-          width: 90vm;
+      .home-img img {
+          width: 310px;
       }
   }
 
@@ -359,3 +364,30 @@
   }
 
   /* Конец Портфолио */
+
+
+  /* Develop */
+  @media screen and (min-width: 768px) {
+    
+    .develop_column {
+        flex: 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .develop_column {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}
+/* Конец Develop */
+
+/* Цена разрабки сайта */
+@media screen and (max-width:1100px) {
+    .pricingdev-card {
+        flex: 50%;
+    }
+}
+/* Конец цена разработки сайта */

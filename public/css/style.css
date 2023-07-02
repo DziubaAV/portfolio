@@ -5,7 +5,7 @@
     /* Темная тема */
     --bg: #1f242d;
     --second-bg: #323946;
-    --main-color: #0ef;
+    --main-color: #2c7bfe;
     --text: #fff;
 
     color-scheme: light;
@@ -1035,4 +1035,150 @@ video h2 {
 .bxs-moon, .bxs-sun {
     font-size: 26px;
 }
+
 /* Конец день ночь */
+
+
+/* Создание WEB-страниц */
+
+.develop {
+    background: var(--bg);
+}
+
+.develop h2 {
+    margin-bottom: 5rem;
+}
+
+.develop_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.develop_column {
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+}
+
+.develop_card {
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#ffffff 50%, #2c7bfe 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.develop_card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--main-color);
+    margin: 1em 0;
+}
+
+.develop_card p {
+    color: black;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+}
+
+.develop_card:hover {
+    background-position: 0 100%;
+}
+
+.develop_card:hover h3 {
+    color: var(--text);
+}
+
+.develop_card:hover p {
+    color: var(--text);
+}
+
+
+/* Цена разработки сайтов */
+.pricingtable {
+    background: var(--bg);
+}
+
+.pricingdev-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.pricingdev-card {
+    flex: 1;
+    max-width: 360px;
+    background-color: var(--text);
+    margin: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    color: black;
+    transition: .3s linear;
+}
+
+.pricingdev-header {
+    background-color: var(--main-color);
+    display: inline-block;
+    color: var(--text);
+    padding: 12px 30px;
+    border-radius: 0 0 20px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .4s linear;
+}
+
+.pricingdev-card:hover .pricingdev-header {
+    box-shadow: 0 0 0 26em var(--main-color);
+}
+
+.pricingdev-price {
+    font-size: 70px;
+    color: var(--main-color);
+    margin: 40px 0;
+    transition: .2s linear;
+}
+
+.pricingdev-price sup, .pricingdev-price span {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.pricingdev-card:hover, .pricingdev-card:hover .pricingdev-price {
+    color: var(--text);
+}
+
+.pricingdev-card li {
+    font-size: 16px;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.order-btn{
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    padding: 18px 40px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .3s linear;
+    font-size: 16px;
+  }
+  
+  .order-btn:hover{
+    background-color: var(--main-color);
+    color: var(--text);
+  }
+
+/* Конец Цена разработки сайтов */
+
+/* Конец WEB-страниц */

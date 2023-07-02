@@ -6,7 +6,7 @@
 
 @section('content') 
 
-<section class="services_home" id="home">
+<section class="services_home" id="services_home">
     <div class="services_home-img">
         <img src="{{ asset('\img\home-img.png') }}" alt="">
     </div>
