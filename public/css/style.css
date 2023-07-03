@@ -1032,8 +1032,13 @@ video h2 {
 /* Конец Портфолио */
 
 /* День ночь */
-.bxs-moon, .bxs-sun {
+.darkmode i {
+    display: flex;
+    align-items: center;
     font-size: 26px;
+    font-weight: 500;
+    cursor: pointer;
+    
 }
 
 /* Конец день ночь */
@@ -1160,7 +1165,7 @@ video h2 {
     text-transform: uppercase;
 }
 
-.order-btn{
+.order-btn {
     display: inline-block;
     margin-bottom: 40px;
     margin-top: 80px;
@@ -1172,13 +1177,20 @@ video h2 {
     font-weight: 500;
     transition: .3s linear;
     font-size: 16px;
-  }
-  
-  .order-btn:hover{
+}
+
+.order-btn:hover {
     background-color: var(--main-color);
     color: var(--text);
-  }
+}
 
 /* Конец Цена разработки сайтов */
 
 /* Конец WEB-страниц */
+
+.group-header {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+}

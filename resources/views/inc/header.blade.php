@@ -42,14 +42,27 @@
           <li><a href="{{ asset('portfolio') }}"  class="{{ request()->is('portfolio') ? 'active' : null }}">Портфолио</a></li>
           <li><a href="{{ asset('contact') }}" class="{{ request()->is('contact') ? 'active' : null }}">Контакты</a></li>  
           <hr>
-          <div class="vertical-line"></div>
-          <li><a href="#" onclick="changeIcon(event)" id="themeToggle"><i class='bx bxs-sun' id="icon"></i></a></li>
-        
-      
+          
+             <div class="group-header">
+            <div class="darkmode">
+            <a id="themeToggle"><i class='bx bxs-sun'></i></a>
+            </div>
+          <div class="localization">
+					<!-- <select autofocus="autofocus" onchange="window.location.href = this.value;">
+            <option value="{{ route('locale', ['locale' => 'ru']) }}" {{ app()->getLocale() == 'ru' ? 'selected' : '' }}>RU</option>
+            <option value="{{ route('locale', ['locale' => 'en']) }}" {{ app()->getLocale() == 'en' ? 'selected' : '' }}>EN</option>
+          </select> -->
+          </div>
+          </div>
       </ul>
       </div>      
     </div>
+
+    
+ 
   </header >
 <!-- Конец навигации -->
 
 
+
+ 
