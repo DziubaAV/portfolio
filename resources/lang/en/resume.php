@@ -7,7 +7,7 @@ return [
     'Интересы' => 'INTERESTS',
     'Профиль' => 'PROFILE',
     'Адрес' => 'ADDRESS',
-    'Минск, Республика Беларусь' => 'Minsk, Republic of Belarus',
+    'address' => 'Minsk, Republic of Belarus',
     'Контакты' => 'CONTACTS',
     'Телефон' => 'Phone',
     'Навыки' => 'Skills',

@@ -7,6 +7,7 @@
 @section('content')
 
 <section class="resume" id="resume">
+
 <div class="resume_wrapper">
 <div class="resume_left">
 		<div class="resume_image">
@@ -14,7 +15,7 @@
 		</div>
 		<div class="resume_bottom">
 			<div class="resume_item resume_namerole">
-				<div class="resume_name">{{__('resume.Дзюба Артёмий Владимирович')}}</div>
+				<div class="resume_name">Дзюба Артёмий Владимирович</div>
 			</div>
 
 			<!-- Профиль -->
@@ -27,20 +28,14 @@
 						<a href="{{ route('locale', ['locale' => 'en']) }}" class="{{ app()->getLocale() == 'en' ? 'active' : '' }}">EN</a>
 					</div>
 				</div>			
-				<!-- <div class="resume_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</div> -->
+				<!-- <div class="resume_info"> Текст</div> -->
 			</div>
 
 			<!-- Адрес -->
 			<div class="resume_item resume_address">
 				<div class="resume_title"><span>{{__('resume.Адрес')}}</span></div>
 				<div class="resume_info">
-                {{__('resume.Минск, Республика Беларусь')}}
+				
 				</div>
 			</div>
 
@@ -61,104 +56,77 @@
 			</div>
 
 			<!-- Навыки -->
-			<div class="resume_item resume_skills">
-				<div class="resume_title"><span>{{__('resume.Навыки')}}</span></div>
-				<div class="resume_info">
+		<div class="resume_item resume_skills">
+    <div class="resume_title"><span>{{__('resume.Навыки')}}</span></div>
+    <div class="resume_info">
+        @foreach ($resumes as $resume)
+            @php
+                $skills = explode(',', $resume->skills);
+                $skillLevels = explode(',', $resume->skills_lvl);
+            @endphp
 
-					<div class="resume_skills_list">
-						<div class="resume_skills_left">Laravel</div>
-						<p><span style="color: white">{{__('resume.Базовый')}}</span></p>
-						<!-- <div class="resume_skills_bar">
-							<p>
-								<span style="width: 90%"></span>
-							</p>
-						</div> -->
-					</div>
+            @foreach ($skills as $index => $skill)
+                <div class="resume_skills_list">
+                    <div class="resume_skills_left">{{ $skill }}</div>
+                    <p><span style="color: white">{{ $skillLevels[$index] }}</span></p>
+                </div>
+            @endforeach
+        @endforeach
+    </div>
+</div>
 
-					<div class="resume_skills_list">
-						<div class="resume_skills_left">PHP</div>
-						<p><span style="color: white">{{__('resume.Базовый')}}</span></p>
-					</div>
-
-					<div class="resume_skills_list">
-						<div class="resume_skills_left">HTML</div>
-						<p><span style="color: white">{{__('resume.Опытный')}}</span></p>
-					</div>
-
-					<div class="resume_skills_list">
-						<div class="resume_skills_left">CSS</div>
-						<p><span style="color: white">{{__('resume.Опытный')}}</span></p>
-					</div>
-
-					<div class="resume_skills_list">
-						<div class="resume_skills_left">JS</div>
-						<p><span style="color: white">{{__('resume.Базовый')}}</span></p>
-					</div>
-
-					<div class="resume_skills_list">
-						<div class="resume_skills_left">Photoshop</div>
-						<p><span style="color: white">{{__('resume.Опытный')}}</span></p>
-					</div>
-				</div>
-			</div>
 
 			<!-- Языки -->
 			<div class="resume_item resume_skills">
 				<div class="resume_title"><span>{{__('resume.Языки')}}</span></div>
 				<div class="resume_info">
+				@foreach ($resumes as $resume)
+            		@php
+                		$languages = explode(',', $resume->languages);
+                		$languagesLevels = explode(',', $resume->languages_lvl);
+            		@endphp
 
+            	@foreach ($languages as $index => $language)
 					<div class="resume_skills_list">
-						<div class="resume_skills_left">{{__('resume.Белорусский')}}</div>
-						<p><span style="color: white">{{__('resume.Родной')}}</span></p>
-						<!-- <div class="resume_skills_bar">
-							<p>
-								<span style="width: 90%"></span>
-							</p>
-						</div> -->
+						<div class="resume_skills_left">{{ $language }}</div>
+						<p><span style="color: white">{{ $languagesLevels[$index] }}</span></p>
 					</div>
-
-					<div class="resume_skills_list">
-						<div class="resume_skills_left">{{__('resume.Русский')}}</div>
-						<p><span style="color: white">{{__('resume.Родной')}}</span></p>
-					</div>
-
-					<div class="resume_skills_list">
-						<div class="resume_skills_left">{{__('resume.Английский')}}</div>
-						<p><span style="color: white">B1</span></p>
-					</div>
+					@endforeach
+        @endforeach
 				</div>
 			</div>
 
+
+	     
 			<!-- Качества -->
-			<div class="resume_item resume_skills">
-				<div class="resume_title"><span>{{__('resume.Качества')}}</span></div>
-				<div class="resume_info">
+			<div class="resume_item resume_qualities">
+    <div class="resume_title"><span>{{__('resume.Качества')}}</span></div>
+    <div class="resume_info">
+        @foreach ($resumes as $resume)
+            @php
+                $qualities = explode(',', $resume->qualities);
+            @endphp
 
-					<div class="resume_skills_list">
-						<div class="resume_skills_left">{{__('resume.Усидчивость')}}</div>
-					</div>
+            @foreach ($qualities as $quality)
+                <div class="resume_skills_list">
+                    <div class="resume_skills_left">{{ $quality }}</div>
+                </div>
+            @endforeach
+        @endforeach
+    </div>
+</div>
 
-					<div class="resume_skills_list">
-						<div class="resume_skills_left">{{__('resume.Внимательность')}}</div>
-					</div>
-
-					<div class="resume_skills_list">
-						<div class="resume_skills_left">{{__('resume.Педантичность')}}</div>
-					</div>
-
-					<div class="resume_skills_list">
-						<div class="resume_skills_left">{{__('resume.Коммуникабельность')}}</div>
-					</div>
-				</div>
-			</div>
 
 
 
 		</div>
 	</div>
+
+
+
 	<div class="resume_right">
 		<div class="resume_item resume_namerole">
-			<div class="resume_name">{{__('resume.Дзюба Артёмий Владимирович')}}</div>
+			<div class="resume_name">Дзюба Артёмий Владимирович</div>
 		</div>
 		<div class="resume_item resume_education">
 			<div class="resume_title"><span>{{__('resume.Образование')}}</span></div>
@@ -290,6 +258,7 @@
         
 	</div>
 </div>
+
 </section>
 
 @endsection
