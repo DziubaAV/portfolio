@@ -1,5 +1,6 @@
 <?php
 return [
+    'resume_name' => 'Artsiomi Dziuba',
     'Дзюба Артёмий Владимирович' => 'Artsiomi Dziuba',
     'Образование' => 'EDUCATION',
     'Опыт работы' => 'EXPERIENCE',

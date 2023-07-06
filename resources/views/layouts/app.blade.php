@@ -36,6 +36,10 @@
     <script src="{{ asset ('/js/accordion.js') }}"></script>
     <script src="{{ asset ('/js/darkmode.js') }}"></script>
     <script src="{{ asset ('/js/video.js') }}"></script>
+    <script src="{{ asset ('/js/pdf.js') }}"></script>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.10.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{{ asset ('/js/html2pdf.bundle.min.js') }}"></script>
 </body>
 </html>

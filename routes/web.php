@@ -6,18 +6,14 @@ use App\Http\Controllers\VideoController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\QuestionAnswerController;
 use App\Http\Controllers\SiteCreationController;
+use App\Http\Controllers\ResumeController;
 
 Route::get('/', function () {
     return view('home');
 })->name('home');
 
 Route::get('/services', [QuestionAnswerController::class, 'index'])->name('services');
-
-
-
-Route::get('/resume', function () {
-    return view('resume');
-})->name('resume');
+Route::get('/resume', [ResumeController::class, 'index'])->name('resume');
 
 Route::get('resume/{locale}', function ($locale) {
     Session::put('locale', $locale);

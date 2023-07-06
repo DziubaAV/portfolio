@@ -20,7 +20,7 @@
 			<!-- Профиль -->
 			<div class="resume_item resume_profile">
 			<div class="resume_title_localization">
-				<div class="resume_title">{{__('resume.Профиль')}}</div>
+				<div class="resume_title"><span>{{__('resume.Профиль')}}</span></div>
 					<div class="localization">
 						<a href="{{ route('locale', ['locale' => 'ru']) }} " class="{{ app()->getLocale() == 'ru' ? 'active' : '' }}">RU</a>
 						/
@@ -38,7 +38,7 @@
 
 			<!-- Адрес -->
 			<div class="resume_item resume_address">
-				<div class="resume_title">{{__('resume.Адрес')}}</div>
+				<div class="resume_title"><span>{{__('resume.Адрес')}}</span></div>
 				<div class="resume_info">
                 {{__('resume.Минск, Республика Беларусь')}}
 				</div>
@@ -46,7 +46,7 @@
 
 			<!-- Контакты -->
 			<div class="resume_item resume_contact">
-				<div class="resume_title">{{__('resume.Контакты')}}</div>
+				<div class="resume_title"><span>{{__('resume.Контакты')}}</span></div>
 				<div class="resume_info">
 					<div class="resume_subtitle"></div>
 					<div class="resume_subinfo">{{__('resume.Телефон')}}: <a href="tel:+375291875526">+375 29 187-55-26</a></div>
@@ -62,7 +62,7 @@
 
 			<!-- Навыки -->
 			<div class="resume_item resume_skills">
-				<div class="resume_title">{{__('resume.Навыки')}}</div>
+				<div class="resume_title"><span>{{__('resume.Навыки')}}</span></div>
 				<div class="resume_info">
 
 					<div class="resume_skills_list">
@@ -104,7 +104,7 @@
 
 			<!-- Языки -->
 			<div class="resume_item resume_skills">
-				<div class="resume_title">{{__('resume.Языки')}}</div>
+				<div class="resume_title"><span>{{__('resume.Языки')}}</span></div>
 				<div class="resume_info">
 
 					<div class="resume_skills_list">
@@ -131,7 +131,7 @@
 
 			<!-- Качества -->
 			<div class="resume_item resume_skills">
-				<div class="resume_title">{{__('resume.Качества')}}</div>
+				<div class="resume_title"><span>{{__('resume.Качества')}}</span></div>
 				<div class="resume_info">
 
 					<div class="resume_skills_list">
@@ -161,7 +161,7 @@
 			<div class="resume_name">{{__('resume.Дзюба Артёмий Владимирович')}}</div>
 		</div>
 		<div class="resume_item resume_education">
-			<div class="resume_title">{{__('resume.Образование')}}</div>
+			<div class="resume_title"><span>{{__('resume.Образование')}}</span></div>
 			<div class="resume_info">
 				<div class="resume_data">
 					<div class="resume_year">2021-2023</div>
@@ -180,7 +180,7 @@
 			</div>
 		</div>
 		<div class="resume_item resume_experience">
-			<div class="resume_title">{{__('resume.Опыт работы')}}</div>
+			<div class="resume_title"><span>{{__('resume.Опыт работы')}}</span></div>
 			<div class="resume_info">
 				<div class="resume_data">
 					<div class="resume_year">2014-{{__('resume.настоящее время')}}</div>
@@ -208,7 +208,7 @@
 
 		
 		<div class="resume_item">
-			<div class="resume_title">{{__('resume.Повышение квалификации')}}</div>
+			<div class="resume_title"><span>{{__('resume.Повышение квалификации')}}</span></div>
 			<div class="resume_info">
 
 				<div class="resume_data">
@@ -258,7 +258,7 @@
 
 
 		<div class="resume_item resume_interests">
-			<div class="resume_title">{{__('resume.Интересы')}}</div>
+			<div class="resume_title"><span>{{__('resume.Интересы')}}</span></div>
 			<div class="resume_info">
 				<div class="resume_interests">
 					<div class="resume_int_icon">
