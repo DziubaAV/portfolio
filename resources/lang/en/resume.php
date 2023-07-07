@@ -1,49 +1,60 @@
 <?php
 return [
+
     'resume_name' => 'Artsiomi Dziuba',
     'Образование' => 'EDUCATION',
     'Опыт работы' => 'EXPERIENCE',
     'Интересы' => 'INTERESTS',
     'Профиль' => 'PROFILE',
     'Адрес' => 'ADDRESS',
-    'address' => 'Minsk, Republic of Belarus',
     'Контакты' => 'CONTACTS',
     'Телефон' => 'Phone',
     'Навыки' => 'Skills',
     'Языки' => 'Languages',
+
+    'address' => 'Minsk, Republic of Belarus',
+
+     // Интересы
     'Тайский бокс' => 'Thai boxing',
     'Эндуро' => 'Enduro',
     'Фридайвинг' => 'Freediving',
     'Сквош' => 'Squash',
+
+    // Образование
     'Международный государственный экологический университет имени А.Д. Сахарова' => 'International State Ecological University named after A.D. Sakharov',
-    'Квалификация: инженер-программист (в здравоохранении)' => 'Specialty: software engineer (in healthcare)',
+    'Инженер-программист (в здравоохранении)' => 'Software engineer (in healthcare)',
     'Институт информационных технологий БГУИР' => 'Institute of Information Technologies BSUIR',
-    'Квалификация: программист – Web-дизайнер' => 'Specialty: programmer - Web-designer',
+    'Программист – Web-дизайнер' => 'Programmer - Web-designer',
+    
+       // Работа
     'ООО "МИРТА"' => 'LLC "MIRTA"',
     'Укладчик-упаковщик' => 'Stacker-packer',
     'РНПЦ МТ' => 'RSPC MT',
     'Инженер-электроник' => 'Electronic engineer',
     'РУП "Центр экспертиз и испытаний в здравоохранении"' => 'Center for examinations and tests in health service" Republican unitary enterprise',
     'Ведущий специалист' => 'Leading specialist',
-    'настоящее время' => 'present',
+    '2014-настоящее время' => '2014-present',
+    '2012-2012' => '2012-2012',
+    '2013-2014' => '2013-2014',
+    
+    // Языки
     'Русский' => 'Russian',
     'Белорусский' => 'Belarusian',
     'Английский' => 'English',
-
-
-    
-    // 'Простой' => 'Simple',
-'Базовый' => 'Base',
-'Опытный' => 'Experienced',
-
     'Родной' => 'Native',
-    'Родной' => 'Native',
+    'B1' => 'B1',
+
+    // Навыки
+    'Простой' => 'Simple',
+    'Базовый' => 'Base',
+    'Опытный' => 'Experienced',
+   
+    // Качества
     'Качества' => 'Qualities',
     'Усидчивость' => 'Persistence',
     'Внимательность' => 'Caution',
     'Педантичность' => 'Pedantry',
     'Коммуникабельность' => 'Sociability',
-
 
     // Повышение квалификации
     'Повышение квалификации' => 'Training',
