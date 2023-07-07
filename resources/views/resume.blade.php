@@ -28,10 +28,10 @@
 <div class="resume_title_localization">
 <div class="resume_title"><span>{{__('resume.Профиль')}}</span></div>
 <div class="localization">
-    <button id="dl-pdf">PDF</button>
-<a href="{{ route('locale', ['locale' => 'ru']) }} " class="{{ app()->getLocale() == 'ru' ? 'active' : '' }}">RU</a>
+<a href="#" class="gradient-button" id="dl-pdf" title="Скачать">PDF</a>
+<a href="{{ route('locale', ['locale' => 'ru']) }}" title="Русский" class="{{ app()->getLocale() == 'ru' ? 'active' : '' }}">RU</a>
 /
-<a href="{{ route('locale', ['locale' => 'en']) }}" class="{{ app()->getLocale() == 'en' ? 'active' : '' }}">EN</a>
+<a href="{{ route('locale', ['locale' => 'en']) }}" title="English" class="{{ app()->getLocale() == 'en' ? 'active' : '' }}">EN</a>
 </div>
 </div>			
 <!-- <div class="resume_info"> Текст</div> -->
