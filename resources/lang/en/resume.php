@@ -1,7 +1,6 @@
 <?php
 return [
     'resume_name' => 'Artsiomi Dziuba',
-    'Дзюба Артёмий Владимирович' => 'Artsiomi Dziuba',
     'Образование' => 'EDUCATION',
     'Опыт работы' => 'EXPERIENCE',
     'Интересы' => 'INTERESTS',
@@ -30,9 +29,13 @@ return [
     'Русский' => 'Russian',
     'Белорусский' => 'Belarusian',
     'Английский' => 'English',
-    'Простой' => 'Simple',
-    'Базовый' => 'Base',
-    'Опытный' => 'Experienced',
+
+
+    
+    // 'Простой' => 'Simple',
+'Базовый' => 'Base',
+'Опытный' => 'Experienced',
+
     'Родной' => 'Native',
     'Родной' => 'Native',
     'Качества' => 'Qualities',
