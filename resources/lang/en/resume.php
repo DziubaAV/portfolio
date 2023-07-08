@@ -34,7 +34,7 @@ return [
     'РУП "Центр экспертиз и испытаний в здравоохранении"' => 'Center for examinations and tests in health service" Republican unitary enterprise',
     'Ведущий специалист' => 'Leading specialist',
     '2014-настоящее время' => '2014-present',
-    '2012-2012' => '2012-2012',
+    '2012' => '2012-2012',
     '2013-2014' => '2013-2014',
     
     // Языки
