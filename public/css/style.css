@@ -474,7 +474,7 @@ span {
 
 .resume_wrapper {
     display: flex;
-    width: 80%;
+    max-width: 1000px;
     margin: 0px auto;
     background: var(--second-bg);
     padding: 10px;
@@ -484,6 +484,18 @@ span {
 .resume_wrapper .resume_left {
     width: 35%;
     background: var(--bg);
+}
+
+.resume_left i {
+    font-size: 25px;
+    color: var(--text);
+    float: right;
+    transition: .3s;
+}
+
+.resume_left i:hover,
+.resume_left i.active {
+    color: var(--main-color);
 }
 
 .resume_wrapper .resume_left .resume_image {

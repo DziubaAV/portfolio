@@ -11,6 +11,7 @@
 
 <!-- Левая сторона -->
 <div class="resume_left">
+<a href="#" id="dl-pdf" title="Скачать"><i class='bx bx-download'></i></a>
 
 <!-- Главная аватарка -->
 <div class="resume_image">
@@ -28,7 +29,6 @@
 <div class="resume_title_localization">
 <div class="resume_title"><span>{{__('resume.Профиль')}}</span></div>
 <div class="localization">
-<a href="#" class="gradient-button" id="dl-pdf" title="Скачать">PDF</a>
 <a href="{{ route('locale', ['locale' => 'ru']) }}" title="Русский" class="{{ app()->getLocale() == 'ru' ? 'active' : '' }}">RU</a>
 /
 <a href="{{ route('locale', ['locale' => 'en']) }}" title="English" class="{{ app()->getLocale() == 'en' ? 'active' : '' }}">EN</a>
