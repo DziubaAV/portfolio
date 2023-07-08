@@ -254,7 +254,7 @@
       }
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1172px) {
       .resume_wrapper .resume_right .resume_namerole {
           display: none;
       }

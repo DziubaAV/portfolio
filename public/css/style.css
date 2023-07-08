@@ -474,7 +474,7 @@ span {
 
 .resume_wrapper {
     display: flex;
-    width: 1000px;
+    width: 80%;
     margin: 0px auto;
     background: var(--second-bg);
     padding: 10px;
