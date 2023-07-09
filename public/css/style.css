@@ -487,6 +487,7 @@ span {
 }
 
 .resume_left i {
+    padding: 20px 30px;
     font-size: 25px;
     color: var(--text);
     float: right;
@@ -505,7 +506,7 @@ span {
 }
 
 .resume_wrapper .resume_left .resume_image img {
-    width: 65%;
+    width: 76%;
     display: block;
 }
 

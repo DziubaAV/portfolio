@@ -11,7 +11,7 @@
 
 <!-- Левая сторона -->
 <div class="resume_left">
-<a href="#" id="dl-pdf" title="Скачать"><i class='bx bx-download'></i></a>
+<a href="#" id="dl-pdf" title="Экспортировать"><i class='bx bx-download'></i></a>
 
 <!-- Главная аватарка -->
 <div class="resume_image">
