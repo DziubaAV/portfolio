@@ -8,7 +8,7 @@
     </div>
 
     <div class="footer-text">
-        <a id="current-year"></a> by Dziuba 
+        <a id="current-year"></a> by Dziuba Artsiomi
     </div>
     
     <br>
