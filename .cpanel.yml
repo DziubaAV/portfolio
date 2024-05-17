@@ -1,0 +1,5 @@
+deployment:
+  tasks:
+    - export REPOPATH=/home/dzartsiomi/repo/*
+    - export SITEPATH=/home/dzartsiomipublic_html/
+    - /bin/rsync -rav --exclude '.git' --exclude '.cpanel.yml' --del $REPOPATH $SITEPATH
