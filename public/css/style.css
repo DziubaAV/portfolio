@@ -207,13 +207,20 @@ header .navbar .links li:hover .js-sub-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
     padding: 1rem;
     background: var(--bg);
 }
 
 .footer-text {
     font-size: 1.6rem;
+}
+
+.dateTime {
+    font-size: 1.2rem;
+}
+
+.credit_card {
+    font-size: 1rem;
 }
 
 .socialmedia a {
@@ -235,6 +242,10 @@ header .navbar .links li:hover .js-sub-menu {
     background: var(--main-color);
     color: var(--dark-second-bg);
     box-shadow: 0 0 1rem var(--main-color);
+}
+
+.dateTime {
+    float: right;
 }
 
 /* Конец Footer */
@@ -1186,4 +1197,8 @@ video h2 {
     align-items: center;
     font-size: 18px;
     font-weight: 500;
+}
+
+#dateTime {
+    color: var(--text);
 }
